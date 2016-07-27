@@ -9,7 +9,7 @@ $wgExtensionCredits['skin'][] = array(
 	'author'      => 'cosmic 원본, 김동동 수정<br>2DU 더 수정<br>일부 이츠레아 및 [https://github.com/librewiki/liberty-skin/commits/master 리버티 LLC 개발진]',
 	'description' => 'acme 부트스트랩 테마를 미디어위키에 적용합니다.',
         'license-name' => "FREE LICENSE<br>일부 GPL-3.0+",
-        'version' => '16-07-26 일반',
+        'version' => '16-07-27 일반',
 );
 
 $wgValidSkinNames['acme'] = 'Acme';
