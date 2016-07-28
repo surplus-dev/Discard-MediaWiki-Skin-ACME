@@ -179,32 +179,7 @@ class AcmeTemplate extends BaseTemplate {
     </script>
 	<!--container start-->
     <section id="body">
-	<div class="live-recent">
-	    <div class="live-recent-header">
-	        <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a href="/test/index.php?title=특수:최근바뀜" class="nav-link active" id="liberty-recent-tab1">최근바뀜</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/dis/index.php/questions" class="nav-link" id="liberty-recent-tab2">최근토론</a>
-                </li>
-            </ul>
-	    </div>
-	    <div class="live-recent-content">
-	        <ul class = "live-recent-list" id="live-recent-list">
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-				<li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	            <li><span class="recent-item">&nbsp;</span></li>
-	        </ul>
-	    </div>
-</div>
+	
 	<div class="container">
 	
 	<div class="row">
