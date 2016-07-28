@@ -28,6 +28,7 @@ $wgResourceModules['skins.acme'] = array(
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
 	),
 	'scripts' => array(
+		$skinDir . '/js/bootstrap.js'            => array( 'media' => 'all' ),
 	),
 	'dependencies' => array(
 		'jquery',

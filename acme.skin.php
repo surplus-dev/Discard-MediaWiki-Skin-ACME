@@ -232,7 +232,6 @@ class AcmeTemplate extends BaseTemplate {
 			<?php
 		}//end if
 		?>
-	<script type="text/javascript" src="/js/bootstrap.js"></script>
 	</body>
 		</html>
 	<?php }
