@@ -363,52 +363,26 @@ p {
 #wpTextbox1 {
     width: 100%;
 }
-#live-recent-list li {
-    list-style: none;
-	border-bottom: 1px solid #e1e8ed;
-	padding: 0.2rem 0.6rem;
-}
-#live-recent-list li a {
-	font-size: 12px;
-    color: #373a3c;
-}
-@media (max-width: 1140px)
+@media (min-width: 992px)
 {
-
-}
-@media (min-width: 1141px)
+@media (max-width: 1024px)
 {
-@media (max-width: 1359px)
+	#toc {
+    position: absolute;
+    left: -30%;
+    top: -20px;
+	max-width: 200px;
+	}
+}
+}
+@media (min-width: 1024px)
 {
-
-}
-}
-@media (min-width: 1360px)
-{
-@media (max-width: 1599px)
-{
-
-}
-}
-@media (min-width: 1600px)
-{
-
-}
-@media (min-width: 991px){
-@media (min-height: 629px){
-.col-md-offset-1 {
-    margin-right: 5%;
-}
-.col-md-10 {
-    min-height: 450px;
-}
-}
-@media (max-height: 629px){
-	
-}
-}
-@media (max-width: 991px){
-	
+	#toc {
+    position: absolute;
+    left: -35%;
+    top: -20px;
+    max-width: 250px;
+	}
 }
 .head-section .nav li a, .head-section .nav li.active ul.dropdown-menu li a {
     color: #373A3C;
@@ -424,15 +398,9 @@ p {
 	margin-top: 0px;
 }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
 	#searchInput {
     width: 240px;
-}
-@media (min-width: 480px){
-.row {
-    margin-right: -70px;
-    margin-left: -70px;
-}
 }
 @media (max-width: 480px){
 table {
