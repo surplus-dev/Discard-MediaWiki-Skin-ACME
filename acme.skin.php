@@ -181,10 +181,10 @@ class AcmeTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- 위실광고1 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<?	if ( $this->data['catlinks'] ) { ?>
 	<?php $this->html( 'catlinks' ); ?>
 	<?php } ?><br>
@@ -216,7 +216,6 @@ class AcmeTemplate extends BaseTemplate {
             </div>
         </div>
     </footer>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
      <!--small footer end-->
 	<?php
 		$this->html('bottomscripts'); /* JS call to runBodyOnloadHook */
