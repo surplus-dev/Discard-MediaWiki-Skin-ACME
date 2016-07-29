@@ -213,8 +213,8 @@ class AcmeTemplate extends BaseTemplate {
         <div class="container">
             <div class="row">
                   <div class="copyright">
-                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#48cfad;' href='https://kiwki.us/wiki/%EB%AF%B8%EB%94%94%EC%96%B4%EC%9C%84%ED%82%A4:Copyright'>Attribution-ShareAlike 4.0 International(CC BY-SA 4.0)</a>에 따라 사용할 수 있습니다.</p><br>
-                    문의메일 : <a style='color:#48cfad;' href="mailto:wiki@kiwki.us">wiki@kiwki.us</a>
+                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#48cfad;' href='https://kiwki.us/wiki/%EB%AF%B8%EB%94%94%EC%96%B4%EC%9C%84%ED%82%A4:Copyright'>Attribution-ShareAlike 4.0 International(CC BY-SA 4.0)</a>에 따라 사용할 수 있습니다.</p>
+                    문의메일 : <a style='color:#48cfad;' href="mailto:wiki@kiwki.us">wiki@kiwki.us</a><br><br>
                   </div>
             </div>
         </div>
