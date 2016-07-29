@@ -68,7 +68,7 @@ class AcmeTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='<?php echo $url_prefix; ?>skins/acme/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) ) ?>></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -162,7 +162,6 @@ class AcmeTemplate extends BaseTemplate {
                 <div class="col-lg-8 col-sm-8">
                     <ol class="breadcrumb pull-right">
 					<?php if ( count( $this->data['content_actions']) > 0 ) {
-							$namu = 1;
 							foreach($this->data['content_actions'] as $pages) {
 								echo '<li><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
 							} ?>
