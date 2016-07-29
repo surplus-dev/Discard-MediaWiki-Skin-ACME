@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</head>
 <?php 
 if ( ! defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
@@ -182,9 +186,7 @@ class AcmeTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<!-- 위실광고1 -->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
-	<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
