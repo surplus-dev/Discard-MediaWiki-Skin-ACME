@@ -389,8 +389,6 @@ p {
 }
 @media (min-width: 1360px)
 {
-@media (max-width: 6000px)
-{
 	#toc {
     position: absolute;
     left: -30%;
@@ -399,7 +397,6 @@ p {
 }
 .col-md-offset-1 {
     margin-right: 10%;
-}
 }
 }
 .head-section .nav li a, .head-section .nav li.active ul.dropdown-menu li a {
