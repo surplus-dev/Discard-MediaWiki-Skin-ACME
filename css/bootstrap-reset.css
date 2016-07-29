@@ -377,12 +377,30 @@ p {
 }
 @media (min-width: 1024px)
 {
+@media (max-width: 1360px)
+{
 	#toc {
     position: absolute;
     left: -35%;
     top: -20px;
     max-width: 250px;
 	}
+}
+}
+@media (min-width: 1360px)
+{
+@media (max-width: 6000px)
+{
+	#toc {
+    position: absolute;
+    left: -30%;
+    top: -20px;
+    max-width: 250px;
+}
+.col-md-offset-1 {
+    margin-right: 10%;
+}
+}
 }
 .head-section .nav li a, .head-section .nav li.active ul.dropdown-menu li a {
     color: #373A3C;
