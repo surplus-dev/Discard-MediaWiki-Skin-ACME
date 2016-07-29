@@ -1,4 +1,4 @@
-<?php
+<?
 
 if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki package and cannot be run standalone." );
 
@@ -36,3 +36,5 @@ $wgResourceModules['skins.acme'] = array(
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
 );
+
+?>

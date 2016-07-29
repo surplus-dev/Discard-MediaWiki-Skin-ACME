@@ -56,7 +56,6 @@ class AcmeTemplate extends BaseTemplate {
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
-
 		$this->html('headelement');
 		?>
 		<!--header start-->
@@ -65,7 +64,7 @@ class AcmeTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<? echo $this->data['nav_urls']['mainpage']['href'] ?>"><img src='/test/skins/acme/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<? echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/test/skins/acme/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -73,13 +72,13 @@ class AcmeTemplate extends BaseTemplate {
 				<li><? echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '최근 바뀐 문서'); ?></li>
 				
 				<li><? echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '랜덤'); ?></li>
-				
-				<? $theMsg = 'toolbox'; $theData = array_reverse($this->getToolbox()); ?>
+				<? $theMsg = 'toolbox';
+				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
                       "dropdown" data-toggle="dropdown" href="#">도구 <i class="fa fa-angle-down"></i>
                       </a>
-                      <ul aria-labelledby="<? echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <? $this->html( 'userlangattributes' ) ?>>
+                      <ul aria-labelledby="<? echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <? $this->html( 'userlangattributes' ); ?>>
 						<?
 							foreach( $theData as $key => $item ) {
 								if (preg_match('/specialpages|whatlinkshere/', $key)) {
@@ -179,10 +178,11 @@ class AcmeTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- 위실광고1 -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	<!-- 광고 끝 -->
 	<?	if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     } ?><br>
