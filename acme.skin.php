@@ -70,7 +70,7 @@ class AcmeTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/test/skins/acme/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/acme/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -93,7 +93,7 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-<li id="t-re"><?php echo '<a href="/test/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
 						
 						</ul>
@@ -202,8 +202,8 @@ class AcmeTemplate extends BaseTemplate {
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="/test/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
-<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/test/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
+	<div class="scroll-buttons"><a class="random-link" href="/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
+<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
 </a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i>
 </a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
