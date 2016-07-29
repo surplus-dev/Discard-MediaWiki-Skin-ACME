@@ -674,3 +674,6 @@ blockquote {
     border-left: solid 5px #2c3e50;
     border-radius: 10px;
 }
+.copyright p a {
+    color: #48cfad;
+}
