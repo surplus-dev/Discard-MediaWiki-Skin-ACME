@@ -186,7 +186,7 @@ class AcmeTemplate extends BaseTemplate {
 	<?	if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     } ?><br>
-	<? $this->html( 'bodytext' )
+	<? $this->html( 'bodytext' );
 	if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
