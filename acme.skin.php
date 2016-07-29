@@ -183,7 +183,7 @@ class AcmeTemplate extends BaseTemplate {
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 	<!-- 광고 끝 -->
-	<?	if ( $this->data['catlinks'] ) {
+	<? if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     } ?><br>
 	<? $this->html( 'bodytext' );
