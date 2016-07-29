@@ -183,11 +183,11 @@ class AcmeTemplate extends BaseTemplate {
 	<!-- 위실광고1 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
-	<?	if ( $this->data['catlinks'] ) { ?>
-	<?php $this->html( 'catlinks' ); ?>
-	<?php } ?><br>
-	<?php $this->html( 'bodytext' ) ?>
-	<?php if ( $this->data['dataAfterContent'] ): ?>
+	<?	if ( $this->data['catlinks'] ) {
+	$this->html( 'catlinks' );
+    } ?><br>
+	<?php $this->html( 'bodytext' )
+	if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
 				<?php $this->html( 'dataAfterContent' ); ?>
@@ -216,19 +216,15 @@ class AcmeTemplate extends BaseTemplate {
     </footer>
      <!--small footer end-->
 	<?php
-		$this->html('bottomscripts'); /* JS call to runBodyOnloadHook */
+		$this->html('bottomscripts');
 		$this->html('reporttime');
 
 		if ( $this->data['debug'] ) {
-			?>
-			<!-- Debug output:
-			<?php $this->text( 'debug' ); ?>
-			-->
-			<?php
-		}//end if
+			$this->text( 'debug' );
+		}
 		?>
 	</body>
 		</html>
 	<?php }
 	
-}
+} ?>
