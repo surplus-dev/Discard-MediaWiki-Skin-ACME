@@ -62,13 +62,15 @@ class AcmeTemplate extends BaseTemplate {
 		<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='<?php echo $url_prefix; ?>skins/acme/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/test/skins/acme/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -91,7 +93,7 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+<li id="t-re"><?php echo '<a href="/test/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
 						
 						</ul>
@@ -164,7 +166,10 @@ class AcmeTemplate extends BaseTemplate {
 					<?php if ( count( $this->data['content_actions']) > 0 ) {
 							$namu = 1;
 							foreach($this->data['content_actions'] as $pages) {
-								echo '<li><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
+								echo '<li id="dis del-'.$namu.'"><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
+								$namu = $namu + 1;
+							}
+                                echo '<li id="dis del-t"><a href="/dis/index.php/questions">토론</a></li>';
 							} ?>
                     </ol>
                 </div>
@@ -179,7 +184,8 @@ class AcmeTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
-	<!-- 광고 -->
+	<!-- 위실광고1 -->
+	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
@@ -196,8 +202,8 @@ class AcmeTemplate extends BaseTemplate {
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="<?php echo $url_prefix; ?>index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
-<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo $url_prefix.'/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
+	<div class="scroll-buttons"><a class="random-link" href="/test/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
+<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/test/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
 </a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i>
 </a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -207,7 +213,7 @@ class AcmeTemplate extends BaseTemplate {
         <div class="container">
             <div class="row">
                   <div class="copyright">
-                    <p><?php $this->html( 'copyright' ) ?></p>
+                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#48cfad;' href='http://creativecommons.org/publicdomain/zero/1.0/deed.ko'>퍼블릭 도메인</a>에 따라 사용할 수 있습니다.</p>
                   </div>
             </div>
         </div>
