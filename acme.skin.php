@@ -62,6 +62,8 @@ class AcmeTemplate extends BaseTemplate {
 		<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
@@ -162,8 +164,12 @@ class AcmeTemplate extends BaseTemplate {
                 <div class="col-lg-8 col-sm-8">
                     <ol class="breadcrumb pull-right">
 					<?php if ( count( $this->data['content_actions']) > 0 ) {
+							$namu = 1;
 							foreach($this->data['content_actions'] as $pages) {
-								echo '<li><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
+								echo '<li id="dis del-'.$namu.'"><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
+								$namu = $namu + 1;
+							}
+                                echo '<li id="dis del-t"><a href="/dis/index.php/questions">토론</a></li>';
 							} ?>
                     </ol>
                 </div>
@@ -179,6 +185,7 @@ class AcmeTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<!-- 광고 -->
+	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
