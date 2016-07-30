@@ -18,6 +18,15 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
+		$out->addMeta( 'description', 'KiwiWiki' );
+		$out->addMeta( 'keywords', 'wiki,KiwiWiki,키위위키,' . $this->getSkin()->getTitle() );
+		$out->addMeta('theme-color', '#AA7949');
+		$out->addMeta('twitter:card', 'summary');
+		$out->addMeta('twitter:site', '@kiwkius');
+		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
+		$out->addMeta('twitter:description', 'KiwiWiki');
+		$out->addMeta('twitter:creator', '@wikicocoa');
+		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
 	}//end initPage
 
 	/**
