@@ -6,14 +6,14 @@
 미디어위키/skins/ 에 acme란 이름으로 파일을 풀고 로컬 셋에
 
 ```php
-	require_once "$IP/skins/acme/acme.php";
+require_once "$IP/skins/acme/acme.php";
 ```
 를 넣으세요.
 
 만약 기본 스킨으로 하려면
 
 ```php
-	$wgDefaultSkin = "acme";
+$wgDefaultSkin = "acme";
 ```
 도 넣으세요.
 
