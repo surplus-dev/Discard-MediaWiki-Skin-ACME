@@ -364,7 +364,7 @@ ul.about-flex-slides { margin-left: 0 }
     width: 12px;
 }
 .flex-direction-nav li a { outline: none }
-.flex-direction-nav li a i { color: #cccccc }
+.flex-direction-nav li a i { color: #000000 }
 .flex-control-paging { display: none }
 .about-carousel { margin-top: 8px }
 .about-testimonial .about-testimonial-image {
@@ -2456,8 +2456,7 @@ p { text-align: left }
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
-    border-left-color: #AA7949;
-    /* #ccc */
+    border-left-color: #ccc;
     margin-top: 9px;
     margin-right: -10px;
 }
