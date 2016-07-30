@@ -808,6 +808,11 @@ ul.about-flex-slides { margin-left: 0 }
     margin: 3px 0 0;
     text-transform: none;
 }
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #000000;
+    content: "/\00a0";
+}
 /*contact*/
 .contact-map {
     margin-top: 40px;
