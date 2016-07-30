@@ -5,7 +5,7 @@ Author: cosmic
 Website:
 */
 body {
-    color: #AA7949;
+    color: #373A3C;
     padding: 0px !important;
     margin: 0px !important;
     font-size: 14px;
@@ -1191,7 +1191,8 @@ ul.tag li {
     list-style: none;
 }
 ul.tag li a {
-    border: 1px solid #e8e8e8;
+    border: 1px solid #AA7949;
+    /* aaa */
     border-radius: 4px;
     line-height: 15px;
     padding: 5px;
