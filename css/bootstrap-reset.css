@@ -278,7 +278,8 @@ ul {
     z-index: 2;
 }
 		a:link {
-			color: #0093FF;
+			/*color: #0093FF;*/
+			color: #AA7949;
 		}
 		a.new {
 			color: #BA0000;
@@ -289,11 +290,11 @@ ul {
 		.external.autonumber {
 			color: green;
 		}
-		a.external.text:before{
+/*		a.external.text:before{
 			content: "外";
 			color: #FFFFFF;
 			background-color: #008000
-		}
+		} */
 		.external.autonumber:before {
 			content: "外";
 			color: #FFFFFF;
