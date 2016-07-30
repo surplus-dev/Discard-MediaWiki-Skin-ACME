@@ -106,8 +106,7 @@ class AcmeTemplate extends BaseTemplate {
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
 						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
 						<li id="t-want"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'title' => '필요한 문서 목록입니다.' ) ); ?></li>
-						<li id="t-seed"><?php echo Linker::linkKnown( Title::makeTitle( NS_CATEGORY, '새싹글' ), '새싹글 목록', array( 'title' => '새싹글 목록입니다.' ) ); ?></li>
-						
+
 						</ul>
 				</li>
 				<li class="dropdown">
