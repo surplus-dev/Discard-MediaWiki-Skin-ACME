@@ -1,5 +1,5 @@
 # acme
-위키 실록 기본 스킨
+키위위키 기본 스킨(Thanks for https://wsilog.xyz 2DU)
 
 # 설치법
 
