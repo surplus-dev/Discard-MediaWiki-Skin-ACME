@@ -107,6 +107,13 @@ class AcmeTemplate extends BaseTemplate {
 						
 						</ul>
 				</li>
+			<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
+                      "dropdown" data-toggle="dropdown" href="#">Test <i class="fa fa-angle-down"></i>
+                      </a>
+                	<ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
+				<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+			</ul>
+				</li>
 				
 				<?php if ($wgUser->isLoggedIn()) {
 				
