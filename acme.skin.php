@@ -112,14 +112,6 @@ class AcmeTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#">Test <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-						<?php
-							foreach( $theData as $key => $item ) {
-								if (preg_match('/specialpages|whatlinkshere/', $key)) {
-									continue;
-								}
-								echo $this->makeListItem( $key, $item );
-							}
-						?>
 			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi'.$_URITITLE.'">';?>키위위키 트위터</a></li>
 						
 						</ul>
