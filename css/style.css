@@ -741,8 +741,7 @@ ul.about-flex-slides { margin-left: 0 }
     padding: 0;
 }
 .pricing-table ul li {
-    border-bottom: 1px dotted #000000;
-    /* 56565 */
+    border-bottom: 1px dotted #cccccc;
     margin: 0 2em;
     padding: 1em 0;
     text-align: center;
