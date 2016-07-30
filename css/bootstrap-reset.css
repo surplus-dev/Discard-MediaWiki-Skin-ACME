@@ -668,3 +668,15 @@ blockquote {
 .col-lg-4.col-sm-4 a, .col-lg-4.col-sm-4 a:hover {
     color: #aa7949;
 }
+.mw-redirectedfrom a {
+    color: #aa7949;
+}
+.mw-redirectedfrom a:hover {
+    color: #aa7949;
+}
+.subpages a {
+    color: #aa7949;
+}
+.subpages a:hover {
+    color: #aa7949;
+}
