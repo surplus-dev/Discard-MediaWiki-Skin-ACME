@@ -540,12 +540,6 @@ div.scroll-buttons a.scroll-button {
 div.scroll-buttons a.scroll-bottom {
     border-radius: 0 0.4em 0 0;
 }
-.mw-redirectedfrom a {
-    color: #48cfad;
-}
-.mw-redirectedfrom a:hover {
-    color: #48cfad;
-}
 .subpages a {
     color: #48cfad;
 }
@@ -671,6 +665,6 @@ blockquote {
     border-left: solid 5px #2c3e50;
     border-radius: 10px;
 }
-.col-lg-4.col-sm-4 span a {
+.col-lg-4.col-sm-4 span a, .col-lg-4.col-sm-4 span a:hover {
     color: #aa7949;
 }
