@@ -107,13 +107,35 @@ class AcmeTemplate extends BaseTemplate {
 						
 						</ul>
 				</li>
-			<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Test <i class="fa fa-angle-down"></i>
-                      </a>
-                	<ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-				<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
-			</ul>
-				</li>
+            <li class="nav-item dropdown">
+                <span class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="키위위키와 관련있는 외부 페이지에 접속합니다.">
+                	<span class="fa fa-comments"></span><span class="hide-title">외부 페이지</span>
+                </span>
+                <div class="dropdown-menu" role="menu">
+					<a class="dropdown-item" href="https://twitter.com/our_kiwi">키위위키 트위터</a>
+					<a class="dropdown-item" href="https://tree.taiga.io/project/cocoa-kiwiwiki-issues-tracker">키위위키 이슈 트래커</a>
+					<a class="dropdown-item" href="http://status.kiwki.hoto.us">키위위키 서버 상태</a>
+					<a class="dropdown-item" href="http://twicewiki.net">트둥백과</a>
+					<a class="dropdown-item" href="https://bbs.kiwki.us/">키위위키 게시판</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Specialpages', null ), '<span class="fa fa-gear"></span><span class="hide-title">도구</span>', array( 'class' => 'nav-link dropdown-toggle dropdown-toggle-fix', 'data-toggle' => 'dropdown', ' role' => 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false', 'title' => '도구를 보여줍니다.') ); ?>
+                <div class="dropdown-menu" role="menu">
+                    <?=Linker::linkKnown( SpecialPage::getTitleFor( 'SpecialPages', null ), '특수 문서 목록', array( 'class' => 'dropdown-item', 'title' => '특수 문서 목록을 불러옵니다. [alt+shift+q]', 'accesskey' => 'q') ); ?>
+                    <?=Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'class' => 'dropdown-item', 'title' => '파일을 올립니다. [alt+shift+g]', 'accesskey' => 'g') ); ?>
+                    <?=Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'class' => 'dropdown-item', 'title' => '필요한 문서 목록입니다. ' ) ); ?>
+                    <?=Linker::linkKnown( Title::makeTitle( NS_CATEGORY, '새싹글' ), '새싹글 목록', array( 'class' => 'dropdown-item' ) ); ?>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키 문법' ), '<span class="fa fa-book"></span><span class="hide-title">도움말</span>', array( 'class' => 'nav-link dropdown-toggle dropdown-toggle-fix', 'data-toggle' => 'dropdown', ' role' => 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false', 'title' => '도구를 보여줍니다.') ); ?>
+                <div class="dropdown-menu" role="menu">
+                    <?=Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'class' => 'dropdown-item' ) ); ?>
+                </div>
+            </li>
+        </ul>
+
 				
 				<?php if ($wgUser->isLoggedIn()) {
 				
