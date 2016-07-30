@@ -102,8 +102,11 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
-						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
+						<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
+						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
+						<li id="t-want"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'title' => '필요한 문서 목록입니다.' ) ); ?></li>
+						<li id="t-seed"><?php echo Linker::linkKnown( Title::makeTitle( NS_CATEGORY, '새싹글' ), '새싹글 목록', array( 'title' => '새싹글 목록입니다.' ) ); ?></li>
 						
 						</ul>
 				</li>
@@ -119,6 +122,15 @@ class AcmeTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//twicewiki.net">';?>트둥백과</a></li>
 						</ul>
 				</li>
+				<li class="dropdown">
+                   <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
+                      "dropdown" data-toggle="dropdown" href="#">도움말 <i class="fa fa-angle-down"></i>
+                      </a>
+                      <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
+                      	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
+						</ul>
+				</li>
+
 				
 				<?php if ($wgUser->isLoggedIn()) {
 				
