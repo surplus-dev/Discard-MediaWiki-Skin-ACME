@@ -164,12 +164,9 @@ class AcmeTemplate extends BaseTemplate {
                 <div class="col-lg-8 col-sm-8">
                     <ol class="breadcrumb pull-right">
 					<?php if ( count( $this->data['content_actions']) > 0 ) {
-							$namu = 1;
 							foreach($this->data['content_actions'] as $pages) {
-								echo '<li id="dis del-'.$namu.'"><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
-								$namu = $namu + 1;
+								echo '<li><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
 							}
-                                echo '<li id="dis del-t"><a href="/dis/index.php/questions">토론</a></li>';
 							} ?>
                     </ol>
                 </div>
@@ -213,8 +210,7 @@ class AcmeTemplate extends BaseTemplate {
         <div class="container">
             <div class="row">
                   <div class="copyright">
-                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#48cfad;' href='https://kiwki.us/wiki/%EB%AF%B8%EB%94%94%EC%96%B4%EC%9C%84%ED%82%A4:Copyright'>Attribution-ShareAlike 4.0 International(CC BY-SA 4.0)</a>에 따라 사용할 수 있습니다.</p>
-                    문의메일 : <a style='color:#48cfad;' href="mailto:wiki@kiwki.us">wiki@kiwki.us</a><br><br>
+                    <p><?php $this->html( 'copyright' ) ?></p>
                   </div>
             </div>
         </div>
