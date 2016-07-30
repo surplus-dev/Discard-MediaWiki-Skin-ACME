@@ -1191,8 +1191,7 @@ ul.tag li {
     list-style: none;
 }
 ul.tag li a {
-    border: 1px solid #AA7949;
-    /* aaa */
+    border: 1px solid #e8e8e8;
     border-radius: 4px;
     line-height: 15px;
     padding: 5px;
@@ -2457,7 +2456,8 @@ p { text-align: left }
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
+    border-left-color: #AA7949;
+    /* #ccc */
     margin-top: 9px;
     margin-right: -10px;
 }
