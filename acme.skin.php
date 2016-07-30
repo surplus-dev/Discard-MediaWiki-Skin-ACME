@@ -109,11 +109,14 @@ class AcmeTemplate extends BaseTemplate {
 				</li>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#">Test <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?>키위위키 트위터</a></li>
-						
+			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?>키위위키 게시판</a></li>
+			<li id="t-re"><?php echo '<a href="//tree.taiga.io/project/cocoa-kiwiwiki-issues-tracker">';?>키위위키 이슈 트래커</a></li>
+			<li id="t-re"><?php echo '<a href="http://status.kiwki.hoto.us">';?>키위위키 서버 상태</a></li>
+			<li id="t-re"><?php echo '<a href="//twicewiki.net">';?>트둥백과</a></li>
 						</ul>
 				</li>
 				
