@@ -18,6 +18,12 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
+		$out->addMeta('twitter:card', 'summary');
+		$out->addMeta('twitter:site', '@wsilog');
+		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
+		$out->addMeta('twitter:description', '위키실록');
+		$out->addMeta('twitter:creator', '@wikicocoa');
+		$out->addMeta('twitter:image', '//puu.sh/qjQSU/1ea3159bf3.png');
 	}//end initPage
 
 	/**
