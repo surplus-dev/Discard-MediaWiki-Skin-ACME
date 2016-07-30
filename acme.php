@@ -36,3 +36,4 @@ $wgResourceModules['skins.acme'] = array(
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
 );
+ 
