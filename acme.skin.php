@@ -130,7 +130,7 @@ class AcmeTemplate extends BaseTemplate {
                       	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
 						</ul>
 				</li>
-
+ 
 				
 				<?php if ($wgUser->isLoggedIn()) {
 				
