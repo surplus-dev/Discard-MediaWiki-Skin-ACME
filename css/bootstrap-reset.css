@@ -671,6 +671,6 @@ blockquote {
     border-left: solid 5px #2c3e50;
     border-radius: 10px;
 }
-.col-lg-4.col-sm-4 a {
+.col-lg-4.col-sm-4 span a {
     color: #aa7949;
 }
