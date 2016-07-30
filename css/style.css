@@ -2975,3 +2975,7 @@ div.header h3{
     left:50%;
     top:-4px;
 }
+
+.col-lg-4.col-sm-4 a {
+    color: #aa7949;
+}
