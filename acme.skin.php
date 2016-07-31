@@ -17,16 +17,22 @@ class SkinAcme extends SkinTemplate {
 		parent::initPage( $out );
 		$out->addModuleScripts( 'skins.acme' );
 		
+//		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
 		$out->addMeta( 'description', 'KiwiWiki' );
 		$out->addMeta( 'keywords', 'wiki,KiwiWiki,키위위키,' . $this->getSkin()->getTitle() );
+//		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', '#AA7949');
+//		윈도우 폰
+		$out->addMeta('msapplication-navbutton-color', '#AA7949'); 
+//		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@kiwkius');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', 'KiwiWiki');
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
+//		트위터 카드 완료
 	}//end initPage
 
 	/**
