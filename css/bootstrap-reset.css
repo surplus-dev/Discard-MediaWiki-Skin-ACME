@@ -290,12 +290,12 @@ ul {
 			color: green;
 		}
 		a.external.text:before{
-			content: "外";
+			content: "외";
 			color: #FFFFFF;
 			background-color: #008000
 		} 
 		.external.autonumber:before {
-			content: "外";
+			content: "외";
 			color: #FFFFFF;
 			background-color: #008000
 		}
