@@ -27,7 +27,7 @@ class SkinAcme extends SkinTemplate {
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', '#34495E');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#34495E');
+		$out->addMeta('msapplication-navbutton-color', '#34495E'); 
 	}//end initPage
 
 	/**
