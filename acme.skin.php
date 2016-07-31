@@ -18,6 +18,7 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
+		$out->addMeta( 'theme-color', '#34495E' );
 	}//end initPage
 
 	/**
