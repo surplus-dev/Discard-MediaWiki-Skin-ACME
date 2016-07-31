@@ -290,12 +290,14 @@ ul {
 			color: green;
 		}
 		a.external.text:before{
-			content: "L";
+			content: "\F0C6";
+			font-family: FontAwesome;
 			color: #FFFFFF;
 			background-color: #008000
 		} 
 		.external.autonumber:before {
-			content: "L";
+			content: "\F0C6";
+			font-family: FontAwesome;
 			color: #FFFFFF;
 			background-color: #008000
 		}
