@@ -3,22 +3,22 @@
 
 # 설치법
 
-미디어위키/skins/ 에 acme란 이름으로 파일을 풀고 로컬 셋에
+미디어위키/skins/ 에 kiwitic란 이름으로 파일을 풀고 로컬 셋에
 
 ```php
-	require_once "$IP/skins/acme/acme.php";
+require_once "$IP/skins/kiwitic/kiwitic.php";
 ```
 를 넣으세요.
 
 만약 기본 스킨으로 하려면
 
 ```php
-	$wgDefaultSkin = "acme";
+$wgDefaultSkin = "kiwitic";
 ```
 도 넣으세요.
 
 # 다크테마
-다크테마로 만들려면 "미디어위키:Common.css"에
+다크테마로 만들려면 "미디어위키:Kiwitic.css"에
 
 ```css
 body {
