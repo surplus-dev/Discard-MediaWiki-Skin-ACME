@@ -3,7 +3,7 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }//end if
 
-class SkinAcme extends SkinTemplate {
+class SkinDcme extends SkinTemplate {
 	/** Using Bootstrap */
 	public $skinname = 'dcme';
 	public $stylename = 'dcme';
@@ -45,7 +45,7 @@ class SkinAcme extends SkinTemplate {
 	}//end setupSkinUserCss
 }
 
-class AcmeTemplate extends BaseTemplate {
+class DcmeTemplate extends BaseTemplate {
 	
 	public $skin;
 
