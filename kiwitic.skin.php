@@ -6,7 +6,7 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 class SkinKiwitic extends SkinTemplate {
 	/** Using Bootstrap */
 	public $skinname = 'Kiwitic';
-	public $stylename = 'kiwitic';
+	public $stylename = 'Kiwitic';
 	public $template = 'KiwiticTemplate';
 	public $useHeadElement = true;
 
