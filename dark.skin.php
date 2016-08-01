@@ -45,7 +45,7 @@ class SkinDark extends SkinTemplate {
 
 		$out->addModuleStyles( 'skins.dark' );
 		
-		$out->addStyle( 'skins/kiwitic/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( '/skins/kiwitic/font-awesome/css/font-awesome.min.css' );
 
 	}//end setupSkinUserCss
 }
