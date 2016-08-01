@@ -12,7 +12,7 @@ $wgExtensionCredits['skin'][] = array(
         'version' => '16-07-28 일반',
 );
 
-$wgValidSkinNames['Kiwitic'] = Kiwitic;
+$wgValidSkinNames['kiwitic'] = Kiwitic;
 $wgAutoloadClasses['SkinKiwitic'] = __DIR__ . '/kiwitic.skin.php';
 
 
