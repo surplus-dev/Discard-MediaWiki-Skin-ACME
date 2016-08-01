@@ -66,7 +66,7 @@ class AcmeTemplate extends BaseTemplate {
 		<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="/Gadget-ReferenceTooltips-ko.js"></script>
+<script src="<?php echo $url_prefix; ?>skins/acme/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
