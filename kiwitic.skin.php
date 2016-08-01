@@ -3,11 +3,11 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }//end if
 
-class SkinAcme extends SkinTemplate {
+class SkinKiwitc extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'acme';
-	public $stylename = 'acme';
-	public $template = 'AcmeTemplate';
+	public $skinname = 'kiwitic';
+	public $stylename = 'kiwitic';
+	public $template = 'KiwiticTemplate';
 	public $useHeadElement = true;
 
 	/**
@@ -15,7 +15,7 @@ class SkinAcme extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.acme' );
+		$out->addModuleScripts( 'skins.kiwitic' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
@@ -43,14 +43,14 @@ class SkinAcme extends SkinTemplate {
 
 		parent::setupSkinUserCss( $out );
 
-		$out->addModuleStyles( 'skins.acme' );
+		$out->addModuleStyles( 'skins.kiwitic' );
 		
-		$out->addStyle( 'acme/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'kiwitic/font-awesome/css/font-awesome.min.css' );
 
 	}//end setupSkinUserCss
 }
 
-class AcmeTemplate extends BaseTemplate {
+class KiwiticTemplate extends BaseTemplate {
 	
 	public $skin;
 
@@ -86,7 +86,7 @@ class AcmeTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/acme/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/kiwitic/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
