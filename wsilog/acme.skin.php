@@ -224,9 +224,9 @@ class AcmeTemplate extends BaseTemplate {
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/"><img class="pull-right" src="https://i.creativecommons.org/l/by-nc-sa/2.0/kr/88x31.png"></a>
-					<a href="https://www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
-					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
+					
+					<a href="https://www.mediawiki.org"><img style="margin-right: 10px;" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
+					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
                   </div>
             </div>
         </div>
