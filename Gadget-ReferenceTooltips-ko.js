@@ -49,14 +49,14 @@ function initSettings() {
 		$("<div>").addClass("content").append(
 			$("<label>").append(
 				$("<input>").attr({"type": "checkbox", "name": "showRefOnHover", "checked": getSettings("showRefOnHover", "boolean")}),
-				"갖다 대서 주석을 띄웁니다."
+				"Drag footnote."
 			)
 		),
 		$("<div>").addClass("foot").append(
-			$("<input>").attr({"type": "button", "value": "취소"}).click(function() {
+			$("<input>").attr({"type": "button", "value": "Cancel"}).click(function() {
 				$("#reference-settings").hide();
 			}),
-			$("<input>").addClass("save-settings").attr({"type": "submit", "value": "저장"})
+			$("<input>").addClass("save-settings").attr({"type": "submit", "value": "Save"})
 		)
 	).submit(function(e) {
 		e.preventDefault();
