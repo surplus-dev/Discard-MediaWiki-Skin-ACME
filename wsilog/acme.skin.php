@@ -74,6 +74,7 @@ class AcmeTemplate extends BaseTemplate {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script src="<?php echo $url_prefix; ?>skins/acme/Gadget-ReferenceTooltips-ko.js"></script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
