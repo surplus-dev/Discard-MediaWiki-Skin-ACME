@@ -49,7 +49,7 @@ function initSettings() {
 		$("<div>").addClass("content").append(
 			$("<label>").append(
 				$("<input>").attr({"type": "checkbox", "name": "showRefOnHover", "checked": getSettings("showRefOnHover", "boolean")}),
-				"Drag footnote."
+				"No Click footnote."
 			)
 		),
 		$("<div>").addClass("foot").append(
