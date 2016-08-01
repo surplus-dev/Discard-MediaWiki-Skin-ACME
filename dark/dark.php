@@ -12,7 +12,7 @@ $wgExtensionCredits['skin'][] = array(
         'version' => '16-08-01 일반',
 );
 
-$wgValidSkinNames['kiwiticdark'] = 'KiwiticDark';
+$wgValidSkinNames['dark'] = 'Dark';
 $wgAutoloadClasses['SkinDark'] = __DIR__ . '/dark.skin.php';
 
 
