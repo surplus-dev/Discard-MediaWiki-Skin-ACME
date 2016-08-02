@@ -253,7 +253,7 @@ class KiwiticTemplate extends BaseTemplate {
 					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
-					<script async src="/skins/kiwitic/ComodoSSL.js"></script>
+					<a href="//secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=CL1&v_search=https://kiwki.us/&x=6&y=5"><img class="pull-right" src="//kiwki.us/comodo_secure_seal.png"></a>
                   </div>
             </div>
         </div>
