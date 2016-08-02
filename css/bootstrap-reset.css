@@ -784,3 +784,6 @@ blockquote {
 #reference-drawer-text {
     font-size: 14px;
 }
+.mw-content-ltr .toc ul ul, .mw-content-ltr #toc ul ul, .mw-content-rtl .mw-content-ltr .toc ul ul, .mw-content-rtl .mw-content-ltr #toc ul ul {
+    margin: 0 0 0 1.5em;
+}
