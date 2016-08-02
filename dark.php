@@ -26,6 +26,7 @@ $wgResourceModules['skins.dark'] = array(
 		$skinDir . '/css/bootstrap-reset.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
+		$skinDir . '/css/dark.css'            => array( 'media' => 'all' ),
 	),
 	'dependencies' => array(
 		'jquery',
