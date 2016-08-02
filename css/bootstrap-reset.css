@@ -415,7 +415,7 @@ p {
 }
 @media (max-width: 768px){
 	#searchInput {
-    width: 240px;
+    width: 90%;
 }
 @media (max-width: 480px){
 table {
@@ -428,7 +428,7 @@ table {
 }
 @media (min-width: 768px){
 	#searchInput {
-    width: 90%;
+    width: 180px;
 }
 }
 div.scroll-buttons {
