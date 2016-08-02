@@ -428,7 +428,7 @@ table {
 }
 @media (min-width: 768px){
 	#searchInput {
-    width: 180px;
+    width: 90%;
 }
 }
 div.scroll-buttons {
