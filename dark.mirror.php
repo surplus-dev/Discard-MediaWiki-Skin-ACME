@@ -13,7 +13,7 @@ $wgExtensionCredits['skin'][] = array(
 );
 
 $wgValidSkinNames['dark'] = 'Dark';
-$wgAutoloadClasses['SkinDark'] = __DIR__ . '/dark.skin.php';
+$wgAutoloadClasses['SkinDark'] = __DIR__ . '/dark.skin..mirror.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );

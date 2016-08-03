@@ -13,7 +13,7 @@ $wgExtensionCredits['skin'][] = array(
 );
 
 $wgValidSkinNames['kiwitic'] = 'Kiwitic';
-$wgAutoloadClasses['SkinKiwitic'] = __DIR__ . '/kiwitic.skin.php';
+$wgAutoloadClasses['SkinKiwitic'] = __DIR__ . '/kiwitic.skin.mirror.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
