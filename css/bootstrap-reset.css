@@ -377,7 +377,7 @@ p {
 }
 @media (min-width: 1024px)
 {
-@media (max-width: 1360px)
+@media (max-width: 1280px)
 {
 	#toc {
     position: absolute;
@@ -385,6 +385,21 @@ p {
     top: -20px;
     max-width: 250px;
 	}
+}
+}
+@media (min-width: 1280px)
+{
+@media (max-width: 1360px)
+{
+	.col-md-offset-1 {
+    margin-right: 10%;
+	}
+	#toc {
+    position: absolute;
+    left: -25%;
+    top: -20px;
+    width: 200px;
+}
 }
 }
 @media (min-width: 1360px)
