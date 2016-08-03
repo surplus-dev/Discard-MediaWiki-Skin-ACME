@@ -2399,13 +2399,11 @@ span.filter {
     margin-top: -40px;
     padding: 30px 0;
 }
-.career-head h1,
-p { text-align: center }
+.career-head h1 { text-align: center }
 .candidate ul li { padding: 3px 0 }
 .candidate h1 { margin-bottom: 20px }
 .align-left { text-align: left }
-.privacy-terms h3,
-p { text-align: left }
+.privacy-terms h3 { text-align: left }
 .terms-list {
     padding-left: 15px;
     padding-bottom: 25px;
