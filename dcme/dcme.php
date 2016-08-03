@@ -4,22 +4,22 @@ if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki pack
 
 $wgExtensionCredits['skin'][] = array(
 	'path'        => __FILE__,
-	'name'        => 'Kiwitic(acme)',
+	'name'        => 'dcme',
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
-	'author'      => 'cosmic 원본, 김동동 수정<br>2DU 더 수정<br>코코아가 키위위키에 맞게 수정',
-	'description' => 'acme 부트스트랩 테마를 미디어위키에 적용합니다.',
+	'author'      => 'cosmic 원본, 김동동 수정<br>2DU 더 수정',
+	'description' => 'acme 부트스트랩 다크 테마를 미디어위키에 적용합니다.',
         'license-name' => "Free License",
         'version' => '16-08-01 일반',
 );
 
-$wgValidSkinNames['acme'] = 'Acme';
-$wgAutoloadClasses['SkinAcme'] = __DIR__ . '/acme.skin.php';
+$wgValidSkinNames['dcme'] = 'Dcme';
+$wgAutoloadClasses['SkinDcme'] = __DIR__ . '/dcme.skin.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
 $skinDir = array_pop( $skinDirParts );
 
-$wgResourceModules['skins.acme'] = array(
+$wgResourceModules['skins.dcme'] = array(
 	'styles' => array(
 		$skinDir . '/css/bootstrap.min.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/theme.css'            => array( 'media' => 'all' ),
@@ -36,4 +36,3 @@ $wgResourceModules['skins.acme'] = array(
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
 );
- 

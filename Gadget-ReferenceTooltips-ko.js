@@ -148,4 +148,8 @@ $(document).ready(function($) {
 			showTooltip(this);
 		}
 	});
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> refs/remotes/2DU/master
