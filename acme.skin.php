@@ -46,10 +46,6 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleStyles( 'skins.acme' );
 		
 		$out->addStyle( 'acme/font-awesome/css/font-awesome.min.css' );
-		//		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#34495E');
-//		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#34495E'); 
 
 	}//end setupSkinUserCss
 }
@@ -81,24 +77,16 @@ class AcmeTemplate extends BaseTemplate {
 		<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 <script src="<?php echo $url_prefix; ?>skins/dcme/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
-=======
-<script src="<?php echo $url_prefix; ?>skins/acme/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
->>>>>>> refs/remotes/2DU/master
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-<<<<<<< HEAD
               <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/acme/img/logo.png' width='200px'></a>
-=======
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='<?php echo $wgLogo; ?>' width='200px'></a>
->>>>>>> refs/remotes/2DU/master
           </div>
 
           <div class="navbar-collapse collapse">
@@ -121,7 +109,6 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-<<<<<<< HEAD
 						<li id="t-re"><?php echo '<a href="/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
 						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
@@ -147,11 +134,6 @@ class AcmeTemplate extends BaseTemplate {
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
                       	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
-=======
-<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
-						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
-						
->>>>>>> refs/remotes/2DU/master
 						</ul>
 				</li>
  
@@ -239,10 +221,7 @@ class AcmeTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<!-- 광고 -->
-<<<<<<< HEAD
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
-=======
->>>>>>> refs/remotes/2DU/master
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
@@ -259,13 +238,8 @@ class AcmeTemplate extends BaseTemplate {
 	</div>
 	</div>
 	</section>
-<<<<<<< HEAD
 	<div class="scroll-buttons"><a class="random-link" href="/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
 <span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
-=======
-	<div class="scroll-buttons"><a class="random-link" href="<?php echo $url_prefix; ?>index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
-<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo $url_prefix.'index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
->>>>>>> refs/remotes/2DU/master
 </a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i>
 </a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -276,11 +250,6 @@ class AcmeTemplate extends BaseTemplate {
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-<<<<<<< HEAD
-=======
-					<a href="https://www.mediawiki.org"><img src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
-					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
->>>>>>> refs/remotes/2DU/master
                   </div>
             </div>
         </div>

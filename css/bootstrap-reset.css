@@ -359,6 +359,7 @@ a.new:hover, a.new:focus {
     padding: 5px;
 }
 p {
+    text-align: left;
     word-break: break-all;
 }
 #wpTextbox1 {
@@ -378,7 +379,7 @@ p {
 }
 @media (min-width: 1024px)
 {
-@media (max-width: 1280px)
+@media (max-width: 1360px)
 {
 	#toc {
     position: absolute;
@@ -386,21 +387,6 @@ p {
     top: -20px;
     max-width: 250px;
 	}
-}
-}
-@media (min-width: 1280px)
-{
-@media (max-width: 1360px)
-{
-	.col-md-offset-1 {
-    margin-right: 10%;
-	}
-	#toc {
-    position: absolute;
-    left: -25%;
-    top: -20px;
-    width: 200px;
-}
 }
 }
 @media (min-width: 1360px)
@@ -431,7 +417,7 @@ p {
 }
 @media (max-width: 768px){
 	#searchInput {
-    width: 90%;
+    width: 240px;
 }
 @media (max-width: 480px){
 table {
@@ -675,7 +661,6 @@ blockquote {
     border-left: solid 5px #2c3e50;
     border-radius: 10px;
 }
-<<<<<<< HEAD
 .col-lg-4.col-sm-4 a {
     color: #aa7949 !important;
 }
@@ -691,121 +676,3 @@ blockquote {
 .subpages a:hover {
     color: #aa7949 !important;
 }
-=======
-.copyright p a {
-    color: #48cfad;
-}
-/* Drawer css start */
-.mode-drawer #reference-drawer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	-webkit-transition: -webkit-transform .25s, opacity .25s, visibility 0s .25s;
-	-ms-transition: -ms-transform .25s, opacity .25s, visibility 0s .25s;
-	transition: transform .25s, opacity .25s, visibility 0s .25s;
-	-webkit-transform: translate(0,100px);
-	-ms-transform: translate(0,100px);
-	transform: translate(0,100px);
-	z-index: 10000;
-	opacity: 0;
-	visibility: hidden;
-	box-shadow: 0 -2px 5px rgba(0, 0, 0, .4);
-}
-
-.mode-drawer #reference-drawer.visible {
-	-webkit-transition: -webkit-transform .25s, opacity .25s;
-	-ms-transition: -ms-transform .25s, opacity .25s;
-	transition: transform .25s, opacity .25s;
-	-webkit-transform: translate(0,0);
-	-ms-transform: translate(0,0);
-	transform: translate(0,0);
-	opacity: 1;
-	visibility: visible;
-}
-
-.mode-drawer #reference-drawer .settings-icon {
-	display: none;
-}
-/* Drawer css end */
-
-/* Tooltip css */
-.mode-tooltip #reference-drawer {
-	position: absolute;
-	display: none;
-	opacity: 0;
-	font-size : 0.9em;
-	max-width: 300px;
-	border-radius: 4px;
-        border: 1px solid rgb(204, 204, 204);
-}
-
-.mode-tooltip #reference-drawer .close-icon {
-	display: none;
-}
-
-/* common css */
-#reference-drawer {
-	padding: 10px 15px;
-	background: #fcfcfc;
-}
-
-#reference-origin {
-	padding-right: 8px;
-}
-
-#reference-settings {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: 300px;
-	height: 200px;
-	margin-top: -100px;
-	margin-left: -150px;
-	padding: 10px;
-	background: white;
-	box-shadow: 0 0 6px gray;
-}
-
-#reference-settings .content {
-	height: 150px;
-}
-
-#reference-settings .content label > input {
-	margin-right: 4px;
-}
-
-#reference-settings .foot {
-	text-align: right;
-}
-
-#reference-settings .foot input {
-	margin-left: 4px;
-}
-
-#reference-drawer .settings-icon {
-	margin: -5px -8px 0 10px;
-	float: right;
-	width: 14px;
-	height: 14px;
-	background: url(//upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cog%2C_Web_Fundamentals.svg/14px-Cog%2C_Web_Fundamentals.svg.png);
-	pointer: cursor;
-}
-
-#reference-drawer .close-icon {
-	float: right;
-	width: 16px;
-	height: 16px;
-	background: url(//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/VisualEditor_-_Icon_-_Close.svg/24px-VisualEditor_-_Icon_-_Close.svg.png);
-	background-position: -4px -4px;
-}
-#reference-drawer-text {
-    font-size: 14px;
-}
-.mw-content-ltr .toc ul ul, .mw-content-ltr #toc ul ul, .mw-content-rtl .mw-content-ltr .toc ul ul, .mw-content-rtl .mw-content-ltr #toc ul ul {
-    margin: 0 0 0 1.5em;
-}
-#external_nico_0 {
-    max-width: 100%;
-}
->>>>>>> refs/remotes/2DU/master

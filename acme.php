@@ -8,8 +8,8 @@ $wgExtensionCredits['skin'][] = array(
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
 	'author'      => 'cosmic 원본, 김동동 수정<br>2DU 더 수정<br>코코아가 키위위키에 맞게 수정',
 	'description' => 'acme 부트스트랩 테마를 미디어위키에 적용합니다.',
-        'license-name' => "Free License",
-        'version' => '16-08-01 일반',
+        'license-name' => "FREE LICENSE",
+        'version' => '16-07-28 일반',
 );
 
 $wgValidSkinNames['acme'] = 'Acme';
