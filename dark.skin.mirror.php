@@ -28,7 +28,7 @@ class SkinDark extends SkinTemplate {
 //		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@kiwkius');
-		$out->addMeta('twitter:title', $this->getSkin()->getTitle() '(미러)' );
+		$out->addMeta('twitter:title', $this->getSkin()->getTitle() '[미러]' );
 		$out->addMeta('twitter:description', 'KiwiWiki Mirror');
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://mirror.kiwki.us/kiwiki.png');
