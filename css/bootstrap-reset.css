@@ -314,13 +314,25 @@ ul {
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Nanum Gothic Coding';
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
+}
+		label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', sans-serif; }
+		
 		div.mw-geshi div,
-		div.mw-geshi div pre,
-		div.mw-geshi div span,
-		span.mw-geshi,
-		pre.source-css,
-		pre.source-javascript,
-		pre, label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', sans-serif; }
+div.mw-geshi div pre,
+div.mw-geshi div span,
+span.mw-geshi,
+pre.source-css,
+pre.source-javascript,
+pre {
+    font-family: '니눔고딕코딩', 'Nanum Gothic Coding', monospace !important;
+}
 
 	.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
@@ -574,19 +586,6 @@ div.scroll-buttons a.scroll-bottom {
 }
 .mw-specialpages-notes ul li {
     margin-left: -0px;
-}
-.mw-highlight pre {
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.428571429;
-    color: #333;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 .mw-content-ltr ol, .mw-content-rtl .mw-content-ltr ol {
     margin: 1em 0 0 2em;

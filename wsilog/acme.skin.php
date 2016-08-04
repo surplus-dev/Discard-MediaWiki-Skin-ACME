@@ -23,7 +23,7 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', '위키실록');
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://wsilog.xyz/test/images/b/b6/wsilog.png');
+		$out->addMeta('twitter:image', '//wsilog.xyz/test/images/b/b6/wsilog.png');
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', '#34495E');
 //		윈도우 폰
