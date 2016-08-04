@@ -236,7 +236,7 @@ class KiwiticTemplate extends BaseTemplate {
 				</div>
 	<?php endif; ?>
     <!-- 광고 -->
-   <ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
+   <ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
    <!-- 광고 끝 -->
 	</div>
 	</div>
