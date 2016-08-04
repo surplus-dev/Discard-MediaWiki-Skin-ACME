@@ -329,7 +329,7 @@ ul {
     list-style-image: none;
 }
 html {
-    background-color: #2c3e50;
+    background-color: #9CE159;
 }
 #toc {
     display: table;
@@ -658,7 +658,7 @@ blockquote {
     font-size: 16px;
     border: solid 1px #aaa;
     background: #f9f9f9;
-    border-left: solid 5px #2c3e50;
+    border-left: solid 5px #9CE159;
     border-radius: 10px;
 }
 .col-lg-4.col-sm-4 a {
