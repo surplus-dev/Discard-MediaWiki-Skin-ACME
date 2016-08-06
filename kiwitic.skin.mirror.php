@@ -79,7 +79,7 @@ class KiwiticTemplate extends BaseTemplate {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
-<script src="/skins/kiwitic/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
+<script src="/skins/kiwitic/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
@@ -235,9 +235,6 @@ class KiwiticTemplate extends BaseTemplate {
 				<!-- /dataAfterContent -->
 				</div>
 	<?php endif; ?>
-    <!-- 하단 광고 -->
-   <ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
-   <!-- 하단 광고 끝 -->
 	</div>
 	</div>
 	</div>
