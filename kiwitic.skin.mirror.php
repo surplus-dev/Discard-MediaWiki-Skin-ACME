@@ -253,7 +253,7 @@ class KiwiticTemplate extends BaseTemplate {
         <div class="container">
             <div class="row">
                   <div class="copyright">
-                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#AA7949;' href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">Attribution-ShareAlike 4.0 International(CC BY-SA 4.0)</a>에 따라 사용할 수 있습니다.<br>문의메일 : <a style='color:#AA7949;' href="mailto:mirror@kiwki.us">mirror@kiwki.us</a><br><br><br></p>
+                    <p>내용은 별도로 명시하지 않을 경우 <a style='color:#AA7949;' href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">Attribution-ShareAlike 4.0 International(CC BY-SA 4.0)</a>에 따라 사용할 수 있습니다.<br>문의메일 : <a style='color:#AA7949;' href="mailto:mirror@kiwki.us">mirror@kiwki.us</a><br>이곳은 미러입니다. 수정을 원하시면 <a style='color:#AA7949;' href="https://kiwki.us">위키</a>로 가주세요.<br><br><br></p>
 					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
