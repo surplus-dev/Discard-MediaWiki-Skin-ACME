@@ -221,9 +221,9 @@ class DarkTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
-	<!-- 광고 -->
+	<!-- 상단 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
-	<!-- 광고 끝 -->
+	<!-- 상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     } ?><br>
