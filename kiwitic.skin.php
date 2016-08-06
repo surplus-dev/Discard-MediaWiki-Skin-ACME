@@ -81,7 +81,6 @@ class KiwiticTemplate extends BaseTemplate {
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 <script src="/skins/kiwitic/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
 <script src="/skins/kiwitic/js/Wikipedia-Common.js" charset='utf-8'></script>
-<script src="/skins/kiwitic/js/R-18-NoAD.js" charset='utf-8'></script>
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
