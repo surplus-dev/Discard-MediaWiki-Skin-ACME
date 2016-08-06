@@ -27,7 +27,7 @@ class SkinDark extends SkinTemplate {
 		$out->addMeta('msapplication-navbutton-color', '#AA7949'); 
 //		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
-		$out->addMeta('twitter:site', '@kiwkius');
+		$out->addMeta('twitter:site', '@MirrorKiwi');
 		$out->addMeta('twitter:title', '미러 - ' . $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', 'KiwiWiki Mirror');
 		$out->addMeta('twitter:creator', '@wikicocoa');
