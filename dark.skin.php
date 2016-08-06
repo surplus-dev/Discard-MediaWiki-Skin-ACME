@@ -204,12 +204,9 @@ class DarkTemplate extends BaseTemplate {
                 <div class="col-lg-8 col-sm-8">
                     <ol class="breadcrumb pull-right">
 					<?php if ( count( $this->data['content_actions']) > 0 ) {
-							$namu = 1;
 							foreach($this->data['content_actions'] as $pages) {
-								echo '<li id="dis del-'.$namu.'"><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
-								$namu = $namu + 1;
+								echo '<li><a href="'.$pages['href'].'">'.$pages['text'].'</a></li>';
 							}
-                                echo '<li id="dis del-t"><a href="/dis/index.php/questions">토론</a></li>';
 							} ?>
                     </ol>
                 </div>
