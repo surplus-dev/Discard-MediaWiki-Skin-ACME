@@ -80,7 +80,7 @@ class KiwiticTemplate extends BaseTemplate {
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 <script src="/skins/kiwitic/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
-<script src="/skins/kiwitic/js/Wikipedia-Common.js" charset='utf-8'></script>
+<!-- <script src="/skins/kiwitic/js/Wikipedia-Common.js" charset='utf-8'></script> -->
 </head>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
