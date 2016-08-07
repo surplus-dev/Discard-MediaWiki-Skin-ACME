@@ -811,3 +811,6 @@ blockquote {
     max-width: 100%;
     height: auto;
 }
+blockquote {
+    margin: 10px 0 10px;
+}
