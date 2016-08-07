@@ -802,7 +802,12 @@ blockquote {
 }
 #external_nico_0 {
     max-width: 100%;
+	height: auto;
 }
 .mw-highlight.mw-content-ltr pre br {
     display: none;
+}
+#file a img {
+    max-width: 100%;
+    height: auto;
 }
