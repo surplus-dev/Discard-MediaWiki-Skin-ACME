@@ -815,6 +815,30 @@ blockquote {
 textarea#comment {
     width: 100%;
 }
+.c-container {
+    margin: 0px 0px 0px 0px;
+}
+.f-message {
+    width: 100%;
+}
+.c-avatar {
+    display: none;
+}
+.c-item {
+    padding: 10px;
+}
 .c-order {
     padding: 0px 0px;
+}
+#allcomments {
+    margin-top: -40px;
+}
+.c-actions {
+    margin: 5px 0px 0px 0px;
+}
+.c-actions p {
+    margin: 0;
+}
+.reply {
+    margin-left: 0px !important;
 }
