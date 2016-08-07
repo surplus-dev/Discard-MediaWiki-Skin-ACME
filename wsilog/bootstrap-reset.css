@@ -842,3 +842,6 @@ textarea#comment {
 .reply {
     margin-left: 0px !important;
 }
+.mw-highlight.mw-content-ltr pre br {
+    display: none;
+}
