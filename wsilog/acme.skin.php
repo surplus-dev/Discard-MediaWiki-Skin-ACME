@@ -72,7 +72,7 @@ class AcmeTemplate extends BaseTemplate {
 		<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
 <script src="<?php echo $url_prefix; ?>skins/acme/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
 </head>
@@ -131,7 +131,7 @@ class AcmeTemplate extends BaseTemplate {
             ?>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img style='width: 32px;' class="profile-img" src="//secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
+                    <img style='width: 32px;' class="profile-img" src="https://secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
 					<ul class="dropdown-menu">
 						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), $wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
@@ -147,7 +147,7 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
+				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
 				</li>
 				
 				<?php } ?>

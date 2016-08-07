@@ -123,7 +123,7 @@ class AcmeTemplate extends BaseTemplate {
             ?>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img style='width: 32px;' class="profile-img" src="//secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
+                    <img style='width: 32px;' class="profile-img" src="https://secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
 					<ul class="dropdown-menu">
 						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), $wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
@@ -139,7 +139,7 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="//secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
+				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ); ?>
 				</li>
 				
 				<?php } ?>
