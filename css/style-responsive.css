@@ -6,7 +6,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 
     .navbar-toggle {
@@ -85,11 +85,10 @@
         width: 100%;
         margin: 10px 0;
     }
-
-    .navbar-brand {
-        float: none;
-
-    }
+	
+	.navbar-brand {
+		margin-top: 15px;
+	}
 
     .carousel-control {
         font-size: 45px;
@@ -105,7 +104,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
 
     .head-section .navbar {
         min-height: 60px;
@@ -142,14 +141,14 @@
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:319px) {
 
 
 }
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
     /*Slider Sequence*/
     #sequence-theme .info {
         top:80px !important;
@@ -163,7 +162,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
     /*Slider Sequence*/
     #sequence-theme .info {
         top:70px !important;
