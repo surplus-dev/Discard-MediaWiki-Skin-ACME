@@ -809,7 +809,7 @@ ul.about-flex-slides { margin-left: 0 }
 }
 .breadcrumb > li + li::before {
     padding: 0 5px;
-    color: #black;
+    color: #000000;
     content: "/\00a0";
 }
 /*contact*/
