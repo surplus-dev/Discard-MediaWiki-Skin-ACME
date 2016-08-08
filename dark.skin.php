@@ -34,6 +34,7 @@ class SkinDark extends SkinTemplate {
 		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#AA7949');
+		$out->addMeta('mobile-web-app-capable', 'Yes');
 //		트위터 카드 완료 
 	}//end initPage
 
