@@ -379,25 +379,10 @@ p {
 }
 @media (min-width: 992px)
 {
-@media (max-width: 1024px)
+@media (max-width: 1279px)
 {
-	#toc {
-    position: absolute;
-    left: -30%;
-    top: -20px;
-	max-width: 200px;
-	}
-}
-}
-@media (min-width: 1024px)
-{
-@media (max-width: 1360px)
-{
-	#toc {
-    position: absolute;
-    left: -35%;
-    top: -20px;
-    max-width: 250px;
+    .col-md-10.col-md-offset-1.mar-b-30 {
+    margin-right: 15%;
 	}
 }
 }
