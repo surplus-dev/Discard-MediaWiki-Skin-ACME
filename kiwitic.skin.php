@@ -32,6 +32,8 @@ class SkinKiwitic extends SkinTemplate {
 		$out->addMeta('twitter:description', 'KiwiWiki');
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
+		$out->addMeta('apple-mobile-web-app-capable', 'yes');
+		$out->addMeta('apple-mobile-web-app-status-bar-style', '#AA7949');
 //		트위터 카드 완료
 	}//end initPage
 
