@@ -853,3 +853,9 @@ textarea#comment {
 blockquote {
     margin: 10px 0 10px;
 }
+.mw-redirectedfrom {
+    display: block;
+}
+.subpages {
+    display: block;
+}
