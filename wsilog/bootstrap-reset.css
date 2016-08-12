@@ -787,7 +787,7 @@ blockquote {
 }
 #external_nico_0 {
     max-width: 100%;
-	height: auto;
+	
 }
 .c-order-select form {
     display: none;
@@ -833,7 +833,7 @@ textarea#comment {
 }
 #file a img {
     max-width: 100%;
-    height: auto;
+    
 }
 blockquote {
     margin: 10px 0 10px;
@@ -846,9 +846,9 @@ blockquote {
 }
 img {
     max-width: 100%;
-    height: auto;
+    
 }
 iframe {
     max-width: 100%;
-    height: auto;
+    
 }
