@@ -441,6 +441,9 @@ table {
 	#searchInput {
     width: 180px;
 }
+#right-search {
+    float: right;
+}
 }
 div.scroll-buttons {
     position: fixed;
