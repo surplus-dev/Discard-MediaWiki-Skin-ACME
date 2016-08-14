@@ -94,6 +94,12 @@ class DarkTemplate extends BaseTemplate {
 
           <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
+			  <li id="right-search">
+					<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform" role="search">
+						<input style="display: block;" class="form-control search" type="search" name="search" placeholder="Search" title=" Search <?php echo $wgSitename; ?> [ctrl-option-f]" accesskey="f" id="searchInput" autocomplete="off">
+ 						<input type="hidden" name="title" value="특수:검색">
+ 					</form>				
+ 				</li>
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '최근 바뀐 문서'); ?></li>
 				
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '랜덤'); ?></li>
@@ -190,14 +196,7 @@ class DarkTemplate extends BaseTemplate {
 				</li>
 				
 				<?php } ?>
-				
-				<li>
-					<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform" role="search">
-						<input style="display: block;" class="form-control search" type="search" name="search" placeholder="Search" title=" Search <?php echo $wgSitename; ?> [ctrl-option-f]" accesskey="f" id="searchInput" autocomplete="off">
-						<input type="hidden" name="title" value="특수:검색">
-					</form>				
-				</li>
-				
+
               </ul>
           </div>
       </div>
