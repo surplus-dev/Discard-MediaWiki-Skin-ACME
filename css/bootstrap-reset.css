@@ -430,9 +430,6 @@ p {
 	#searchInput {
     width: 90%;
 }
-#right-search {
-    float: right;
-}
 @media (max-width: 479px){
 table {
     min-width: 100%;
@@ -445,6 +442,9 @@ table {
 @media (min-width: 768px){
 	#searchInput {
     width: 180px;
+}
+#right-search {
+    float: right;
 }
 }
 div.scroll-buttons {
