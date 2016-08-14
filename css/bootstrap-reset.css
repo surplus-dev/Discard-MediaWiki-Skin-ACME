@@ -812,3 +812,6 @@ img {
 iframe {
     max-width: 100%;
 }
+#searchInput {
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+}
