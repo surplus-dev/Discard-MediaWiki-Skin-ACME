@@ -471,7 +471,7 @@ button {
     border-radius: 0.25rem;
     padding: 5px 20px 5px 20px;
     background: white;
-	box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 #dis\ del-2 {
     display: none;
@@ -481,33 +481,33 @@ button {
     border-radius: 0.25rem;
     padding: 5px 10px 5px 10px;
     background: white;
-	box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 input {
     border: 1px solid #aaaaaa;
     border-radius: 0.25rem;
     padding: 5px 10px 5px 10px;
     background: white;
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 .mw-htmlform-submit {
     border: 1px solid #aaaaaa;
     border-radius: 0.25rem;
     padding: 5px 10px 5px 10px;
     background: white;
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 .scroll-buttons a:link, .scroll-buttons a:visited {
     color: #e0e0e0;
 }
 table.wikitable {
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 #catlinks {
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 #toc {
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 div.scroll-buttons a {
     display: inline-block;
@@ -584,14 +584,14 @@ div.scroll-buttons a.scroll-bottom {
     color: white;
     font-weight: normal;
     border: none;
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 #mw-createaccount-join:hover, #mw-createaccount-join:active, #mw-createaccount-join:focus, #mw-createaccount-join:active:focus {
     background: #2962cc;
     color: white;
     font-weight: normal;
     border: none;
-    box-shadow: 3px 3px 0 0 rgba(130,130,130,0.1);
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
 }
 #wpLoginAttempt {
     font-weight: normal;
@@ -836,6 +836,7 @@ textarea#comment {
 }
 blockquote {
     margin: 10px 0 10px;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .mw-redirectedfrom {
     display: block;
