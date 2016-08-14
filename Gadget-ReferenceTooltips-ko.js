@@ -149,3 +149,4 @@ $(document).ready(function($) {
 		}
 	});
 });
+/* 오리위키에서 가져옴 */
