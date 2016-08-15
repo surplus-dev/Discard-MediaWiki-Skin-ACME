@@ -646,8 +646,8 @@ div#catlinks {
     margin-bottom: -10px;
 }
 ins#noadsense {
-    margin-bottom: -30px;
-    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .wikiEditor-ui-buttons button {
     display: none;
