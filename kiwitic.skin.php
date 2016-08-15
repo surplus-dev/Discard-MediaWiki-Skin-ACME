@@ -231,6 +231,7 @@ class KiwiticTemplate extends BaseTemplate {
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<!--상단 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
+	<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
