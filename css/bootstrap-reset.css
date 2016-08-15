@@ -644,7 +644,11 @@ div#mw-content-text .mw-warning-with-logexcerpt.mw-content-ltr ul {
 }
 div#catlinks {
     margin-bottom: -10px;
-} 
+}
+ins#noadsense {
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
 .wikiEditor-ui-buttons button {
     display: none;
 }
