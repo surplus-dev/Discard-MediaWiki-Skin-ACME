@@ -818,3 +818,7 @@ iframe {
 .subpages a:hover {
     color: #aa7949 !important;
 }
+.navbar-collapse.collapse.in {
+    overflow: inherit;
+    margin-bottom: 30px;
+}
