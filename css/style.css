@@ -24,11 +24,11 @@ a:focus {
     color: #015301;
 }
 ::selection {
-    background: #48cfad;
+    background: #AA7949;
     color: #fff;
 }
 ::-moz-selection {
-    background: #48cfad;
+    background: #AA7949;
     color: #fff;
 }
 p { line-height: 22px }
