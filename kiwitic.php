@@ -9,7 +9,7 @@ $wgExtensionCredits['skin'][] = array(
 	'author'      => 'cosmic, 김동동, 2DU, 코코아',
 	'description' => 'acme 부트스트랩 테마를 미디어위키에 적용합니다.',
         'license-name' => "FREE LICENSE",
-        'version' => '1.0b01',
+        'version' => 'Release',
 );
 
 $wgValidSkinNames['kiwitic'] = 'Kiwitic';
