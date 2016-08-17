@@ -6,8 +6,8 @@ $wgExtensionCredits['skin'][] = array(
 	'path'        => __FILE__,
 	'name'        => 'Kiwitic-Dark',
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
-	'author'      => 'cosmic, 김동동, 2DU, 코코아',
-	'description' => 'acme 부트스트랩 다크 테마를 미디어위키에 적용합니다.',
+	'author'      => 'cosmic, 김동동, 2DU, 코코아, CES',
+	'description' => '키위위키의 다크테마입니다.',
         'license-name' => "FREE LICENSE",
         'version' => 'Release',
 );
