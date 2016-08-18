@@ -60,3 +60,7 @@ table.wikitable td, table.wikitable > tr > td, table.wikitable > * > tr > td {
 table.wikitable td:first-child {
 	border-left: 0;
 }
+table.wikitable tr:last-child > td
+{
+	border-bottom: none;
+}
