@@ -21,7 +21,7 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@wsilog');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
-		$out->addMeta('twitter:description', '위키실록');
+		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://wsilog.xyz/test/images/b/b6/wsilog.png');
 //		크롬, 파이어폭스 OS, 오페라
