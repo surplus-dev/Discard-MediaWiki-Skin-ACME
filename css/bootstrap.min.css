@@ -52,7 +52,7 @@ table.wikitable th, table.wikitable > tr > th, table.wikitable > * > tr > th {
 table.wikitable td, table.wikitable > tr > td, table.wikitable > * > tr > td {
 	padding: .1em .3em;
 	border-right: none;
-	border-top: 1px solid #fff;
+	border-top: none;
 	border-bottom: 1px solid #aaa;
 	border-left: 1px solid #aaa;
 
