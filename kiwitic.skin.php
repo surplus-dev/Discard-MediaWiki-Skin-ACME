@@ -29,7 +29,7 @@ class SkinKiwitic extends SkinTemplate {
 		$out->addMeta('twitter:card', 'summary');
 		$out->addMeta('twitter:site', '@kiwkius');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
-		$out->addMeta('twitter:description', 'KiwiWiki');
+		$out->addMeta('twitter:description', $this->html( 'dataAfterContent' ) );
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
