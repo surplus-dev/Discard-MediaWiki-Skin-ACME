@@ -824,3 +824,16 @@ iframe {
 #aswift_0 {
     height: 90px;
 }
+#spy p a {
+    border: 1px solid #aaaaaa;
+    border-radius: 0.25rem;
+    padding: 5px 10px 5px 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+    font-size: 14px;
+    color: black;
+    margin-left: -10px;
+}
+#spy p a:hover {
+    text-decoration: none;
+}
