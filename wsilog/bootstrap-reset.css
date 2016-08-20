@@ -367,6 +367,7 @@ a.new:hover, a.new:focus {
 #mw-normal-catlinks {
     border: 1px solid rgb(204, 204, 204);
     padding: 5px;
+	border-radius: 3px;
 }
 p {
     word-break: break-all;
@@ -474,7 +475,7 @@ button {
     border-radius: 0.25rem;
     padding: 5px 20px 5px 20px;
     background: white;
-	box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 #dis\ del-2 {
     display: none;
@@ -484,33 +485,34 @@ button {
     border-radius: 0.25rem;
     padding: 5px 10px 5px 10px;
     background: white;
-	box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 input {
     border: 1px solid #aaaaaa;
-    border-radius: 0.25rem;
+    border-radius: 3px;
     padding: 5px 10px 5px 10px;
     background: white;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .mw-htmlform-submit {
     border: 1px solid #aaaaaa;
     border-radius: 0.25rem;
     padding: 5px 10px 5px 10px;
     background: white;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .scroll-buttons a:link, .scroll-buttons a:visited {
     color: #e0e0e0;
 }
 table.wikitable {
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 #catlinks {
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 #toc {
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+	border-radius: 3px;
 }
 div.scroll-buttons a {
     display: inline-block;
@@ -587,14 +589,14 @@ div.scroll-buttons a.scroll-bottom {
     color: white;
     font-weight: normal;
     border: none;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 #mw-createaccount-join:hover, #mw-createaccount-join:active, #mw-createaccount-join:focus, #mw-createaccount-join:active:focus {
     background: #2962cc;
     color: white;
     font-weight: normal;
     border: none;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 #wpLoginAttempt {
     font-weight: normal;
@@ -673,7 +675,7 @@ blockquote {
     border: solid 1px #aaa;
     background: #f9f9f9;
     border-left: solid 5px #2c3e50;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 .copyright p a {
     color: #48cfad;
@@ -869,4 +871,7 @@ iframe {
 }
 #spy p a:hover {
     text-decoration: none;
+}
+.comments-block-user {
+    display: inline-flex;
 }
