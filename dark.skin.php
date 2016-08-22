@@ -238,7 +238,7 @@ class DarkTemplate extends BaseTemplate {
     } ?><br>
 	<?php $this->html( 'bodytext' ); ?>
 	<!--하단 광고 -->
-	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
+	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
 	<!--하단 광고 끝 -->
 	<?php if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
