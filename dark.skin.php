@@ -236,8 +236,11 @@ class DarkTemplate extends BaseTemplate {
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     } ?><br>
-	<?php $this->html( 'bodytext' );
-	if ( $this->data['dataAfterContent'] ): ?>
+	<?php $this->html( 'bodytext' ); ?>
+	<!--하단 광고 -->
+	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
+	<!--하단 광고 끝 -->
+	<?php if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
 				<?php $this->html( 'dataAfterContent' ); ?>
