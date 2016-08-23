@@ -139,7 +139,7 @@ class KiwiticTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//mirror.kiwki.us">';?>키위미러</a></li>
 			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?>키위위키 트위터</a></li>
 			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?>키위위키 게시판</a></li>
-			<li id="t-re"><?php echo '<a href="//tree.taiga.io/project/kiwiwiki-issues-tracker">';?>키위위키 이슈 트래커</a></li>
+			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?>키위위키 이슈 트래커</a></li>
 			<li id="t-re"><?php echo '<a href="//status.kiwki.us">';?>키위위키 서버 상태</a></li>
 			<li id="t-re"><?php echo '<a href="//twicewiki.net">';?>트둥백과</a></li>
 						</ul>
