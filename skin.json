@@ -33,13 +33,7 @@
 				"css/style-responsive.css": {
 					"media": "all"
 				}
-			},
-			"scripts": [
-				"js/jquery.min.js",
-				"js/bootstrap.min.js",
-				"js/adsbygoogle.js",
-				"js/Gadget-ReferenceTooltips-ko.js"
-			]
+			}
 		}
 	},
 	"ResourceFileModulePaths": {
