@@ -792,7 +792,7 @@ img {
 }
 iframe {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 .col-lg-4.col-sm-4 a{
     color: #aa7949 !important;
