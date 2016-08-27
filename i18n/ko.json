@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"cosmic, 김동동, 2DU"
+		]
+	},
+	"skinname-acme": "Acme",
+	"kiwitic-desc": "acme 부트스트랩 테마를 미디어위키에 적용합니다.",
+	"kiwitic.css": "/* 이 CSS 설정은 대한위키실록의 모든 사용자에게 적용됩니다 */",
+	"kiwitic.js": "/* 이 JS 설정은 대한위키실록의 모든 사용자에게 적용됩니다 */"
+}
