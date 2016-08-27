@@ -21,7 +21,7 @@
 						"css/theme.css": { "media": "all" },
 						"css/style-responsive.css": { "media": "all" },
 						"css/style.css": { "media": "all" },
-						"css/librewiki.css": { "media": "all" },
+//						"css/librewiki.css": { "media": "all" },
 						"css/bootstrap-reset.css": { "media": "all" },
 						"css/bootstrap.min.css": { "media": "all" },
 				}
