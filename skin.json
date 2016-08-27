@@ -35,9 +35,8 @@
 				},
 				"css/bootstrap.min.css": {
 					"media": "all"
-				}
+				},
 			},
-			"position": "bottom"
 		},
 	},
 	"ResourceFileModulePaths": {
@@ -47,5 +46,5 @@
 	"AutoloadClasses": {
 		"SkinKiwitic": "kiwitic.skin.php",
 		"KiwiticTemplate": "kiwitic.skin.php"
-	}
+	},
 }
