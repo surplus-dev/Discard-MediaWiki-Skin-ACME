@@ -1,0 +1,50 @@
+{
+	"name": "Acme",
+	"author": [
+		"cosmic, 김동동, 2DU"
+	],
+	"url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
+	"descriptionmsg": "acme-desc",
+	"namemsg": "skinname-acme",
+	"license-name": "FREE LICENSE",
+	"type": "skin",
+	"version": "16-08-27 일반",
+	"ValidSkinNames": {
+		"acme": "Acme"
+	},
+	"MessagesDirs": {
+		"acme": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.acme": {
+			"styles": {
+				"css/theme.css": {
+					"media": "all"
+				},
+				"css/style-responsive.css": {
+					"media": "all"
+				},
+				"css/style.css": {
+					"media": "all"
+				},
+				"css/bootstrap-reset.css": {
+					"media": "all"
+				},
+				"css/bootstrap.min.css": {
+					"media": "all"
+				}
+			},
+			"position": "bottom"
+		},
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "acme"
+	},
+	"AutoloadClasses": {
+		"SkinAcme": "acme.php",
+		"AcmeTemplate": "acme.skin.php"
+	}
+}
