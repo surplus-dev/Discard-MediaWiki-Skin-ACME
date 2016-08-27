@@ -310,33 +310,22 @@ ul {
 
 @font-face {
   font-family: 'Nanum Gothic';
-  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
-  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Nanum Gothic Coding';
-  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
-  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format('embedded-opentype'),
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
 }
-		label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', sans-serif; }
-		
-		div.mw-geshi div,
-div.mw-geshi div pre,
-div.mw-geshi div span,
-span.mw-geshi,
-pre.source-css,
-pre.source-javascript,
-pre {
-    font-family: '니눔고딕코딩', 'Nanum Gothic Coding', monospace !important;
-}
+label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', 'sans-serif'; }
+div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: '나눔고딕코딩', 'Nanum Gothic Coding', 'monospace'; }
 
-	.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
+.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
     list-style-image: none;
 }
