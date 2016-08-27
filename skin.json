@@ -11,9 +11,7 @@
 		"kiwitic": "Kiwitic"
 	},
 	"MessagesDirs": {
-		"kiwitic": [
-			"i18n"
-		]
+		"kiwitic": "i18n"
 	},
 	"ResourceModules": {
 		"skins.kiwitic": {
@@ -35,9 +33,9 @@
 				},
 				"css/bootstrap.min.css": {
 					"media": "all"
-				},
-			},
-		},
+				}
+			}
+		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
