@@ -14,7 +14,7 @@
 	},
 	"MessageDirs": {
 		"kiwitic": "i18n"
-	}
+	},
 	"ResourceModules": {
 		"skins.kiwitic": {
 				"styles": {
@@ -25,18 +25,17 @@
 						"css/bootstrap.min.css": { "media": "all" },
 						"font-awesome/css/font-awesome.min.css": { "media": "all" },
 				}
+				"scripts": [
+					"js/jquery.min.js",
+					"js/bootstrap.min.js",
+					"js/adsbygoogle.js",
+					"js/Gadget-ReferenceTooltips-ko.js"
+				]
+			}
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteSkinPath": "kiwitic"
 	},
-	"skins.kiwitic": {
-			"scripts": [
-				"js/jquery.min.js",
-				"js/bootstrap.min.js",
-				"js/adsbygoogle.js",
-				"js/Gadget-ReferenceTooltips-ko.js"
-			]
-		}
 }
