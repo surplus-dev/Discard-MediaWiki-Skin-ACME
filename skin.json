@@ -1,55 +1,34 @@
 {
 	"name": "Kiwitic",
-	"author": [
-					"cosmic, 김동동, 2DU, 코코아, CES, 키위"
-	],
+	"author": "cosmic, 김동동, 2DU, 코코아, CES, 키위",
 	"url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
 	"descriptionmsg": "kiwitic-desc",
 	"namemsg": "skinname-kiwitic",
-	"license-name": "FREE LICENSE",
+	"license-name": "GPL-2.0+",
 	"type": "skin",
-	"version": "Release",
 	"ValidSkinNames": {
 		"kiwitic": "Kiwitic"
 	},
-	"MessagesDirs": {
-		"kiwitic": [
-						"i18n"
-		],
+	"AutoloadClasses": {
+		"SkinKiwitic": "kiwitic.skin.php"
 	},
-	"requires": {
-		"MediaWiki": ">= 1.26.0"
-    },
+	"MessageDirs": {
+		"kiwitic": "i18n"
+	}
 	"ResourceModules": {
 		"skins.kiwitic": {
-			"styles": {
-				"css/theme.css": {
-					"media": "all"
-				},
-				"css/style-responsive.css": {
-					"media": "all"
-				},
-				"css/style.css": {
-					"media": "all"
-				},
-				"css/librewiki.css": {
-					"media": "all"
-				},
-				"css/bootstrap-reset.css": {
-					"media": "all"
-				},
-				"css/bootstrap.min.css": {
-					"media": "all"
+				"styles": {
+						"resources/theme.css": { "media": "all" },
+						"resources/style-responsive.css": { "media": "all" },
+						"resources/style.css": { "media": "all" },
+						"resources/librewiki.css": { "media": "all" },
+						"resources/bootstrap-reset.css": { "media": "all" },
+						"resources/bootstrap.min.css": { "media": "all" },
 				}
-			}
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Kiwitic"
+		"remoteSkinPath": "kiwitic"
 	},
-	"AutoloadClasses": {
-		"SkinKiwitic": "kiwitic.skin.php",
-		"KiwiticTemplate": "kiwitic.skin.php"
-	}
 }
