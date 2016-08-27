@@ -6,7 +6,7 @@
 	"url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
 	"descriptionmsg": "kiwitic-desc",
 	"namemsg": "skinname-kiwitic",
-	"license-name": "MIT",
+	"license-name": "FREE LICENSE",
 	"type": "skin",
 	"version": "Release",
 	"ValidSkinNames": {
@@ -46,7 +46,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "kiwitic"
+		"remoteSkinPath": "Kiwitic"
 	},
 	"AutoloadClasses": {
 		"SkinKiwitic": "kiwitic.skin.php",
