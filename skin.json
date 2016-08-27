@@ -17,25 +17,36 @@
 	},
 	"ResourceModules": {
 		"skins.kiwitic": {
-				"styles": {
-						"css/theme.css": { "media": "all" },
-						"css/style-responsive.css": { "media": "all" },
-						"css/style.css": { "media": "all" },
-						"css/bootstrap-reset.css": { "media": "all" },
-						"css/bootstrap.min.css": { "media": "all" },
-						"font-awesome/css/font-awesome.min.css": { "media": "all" },
+			"styles": {
+				"css/theme.css": {
+					"media": "all"
 				},
-				"scripts": [
-						"js/jquery.min.js",
-						"js/bootstrap.min.js",
-						"js/adsbygoogle.js",
-						"js/Gadget-ReferenceTooltips-ko.js"
-				]
-			}
+				"css/style-responsive.css": {
+					"media": "all"
+				},
+				"css/style.css": {
+					"media": "all"
+				},
+				"css/bootstrap-reset.css": {
+					"media": "all"
+				},
+				"css/bootstrap.min.css": {
+					"media": "all"
+				},
+				"font-awesome/css/font-awesome.min.css": {
+					"media": "all"
+				}
+			},
+			"scripts": [
+				"js/jquery.min.js",
+				"js/bootstrap.min.js",
+				"js/adsbygoogle.js",
+				"js/Gadget-ReferenceTooltips-ko.js"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
 		"remoteSkinPath": "kiwitic"
-	},
+	}
 }
