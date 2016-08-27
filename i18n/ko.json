@@ -4,8 +4,8 @@
 			"cosmic, 김동동, 2DU, 코코아, CES, 키위"
 		]
 	},
-	"skinname-liberty": "Kiwitic",
-	"liberty-desc": "키위위키의 기본테마입니다.",
-	"liberty.css": "/* 이 CSS 설정은 키위위키의 모든 사용자에게 적용됩니다 */",
-	"liberty.js": "/* 이 JS 설정은 키위위키의 모든 사용자에게 적용됩니다 */"
+	"skinname-kiwitic": "Kiwitic",
+	"kiwitic-desc": "키위위키의 기본테마입니다.",
+	"kiwitic.css": "/* 이 CSS 설정은 키위위키의 모든 사용자에게 적용됩니다 */",
+	"kiwitic.js": "/* 이 JS 설정은 키위위키의 모든 사용자에게 적용됩니다 */"
 }
