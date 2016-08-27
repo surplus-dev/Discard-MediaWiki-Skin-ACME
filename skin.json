@@ -18,6 +18,9 @@
 	"ResourceModules": {
 		"skins.kiwitic": {
 			"styles": {
+				"css/bootstrap.min.css": {
+					"media": "all"
+				},
 				"css/theme.css": {
 					"media": "all"
 				},
@@ -28,9 +31,6 @@
 					"media": "all"
 				},
 				"css/bootstrap-reset.css": {
-					"media": "all"
-				},
-				"css/bootstrap.min.css": {
 					"media": "all"
 				}
 			},
