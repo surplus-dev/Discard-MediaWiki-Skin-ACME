@@ -21,9 +21,9 @@
 						"css/theme.css": { "media": "all" },
 						"css/style-responsive.css": { "media": "all" },
 						"css/style.css": { "media": "all" },
-//						"css/librewiki.css": { "media": "all" },
 						"css/bootstrap-reset.css": { "media": "all" },
 						"css/bootstrap.min.css": { "media": "all" },
+						"font-awesome/css/font-awesome.min.css": { "media": "all" },
 				}
 		}
 	},
@@ -31,4 +31,12 @@
 		"localBasePath": "",
 		"remoteSkinPath": "kiwitic"
 	},
+	"skins.kiwitic": {
+			"scripts": [
+				"js/jquery.min.js",
+				"js/bootstrap.min.js",
+				"js/adsbygoogle.js",
+				"js/Gadget-ReferenceTooltips-ko.js"
+			]
+		}
 }
