@@ -19,12 +19,12 @@
 	"ResourceModules": {
 		"skins.kiwitic": {
 				"styles": {
-						"resources/theme.css": { "media": "all" },
-						"resources/style-responsive.css": { "media": "all" },
-						"resources/style.css": { "media": "all" },
-						"resources/librewiki.css": { "media": "all" },
-						"resources/bootstrap-reset.css": { "media": "all" },
-						"resources/bootstrap.min.css": { "media": "all" },
+						"css/theme.css": { "media": "all" },
+						"css/style-responsive.css": { "media": "all" },
+						"css/style.css": { "media": "all" },
+						"css/librewiki.css": { "media": "all" },
+						"css/bootstrap-reset.css": { "media": "all" },
+						"css/bootstrap.min.css": { "media": "all" },
 				}
 		}
 	},
