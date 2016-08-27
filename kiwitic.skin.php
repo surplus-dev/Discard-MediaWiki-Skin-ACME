@@ -77,11 +77,7 @@ class KiwiticTemplate extends BaseTemplate {
 		$this->html('headelement');
 		?>
 		<!--header start-->
-<script src="/skins/kiwitic/js/jquery.min.js"></script>
-<script src="/skins/kiwitic/js/bootstrap.min.js"></script>
-<script async src="/skins/kiwitic/js/adsbygoogle.js"></script>
 <script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script>
-<script src="/skins/kiwitic/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
     <header class="head-section">
       <div class="navbar navbar-default navbar-static-top container">
           <div class="navbar-header">
