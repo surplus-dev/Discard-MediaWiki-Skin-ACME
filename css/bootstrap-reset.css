@@ -310,24 +310,33 @@ ul {
 
 @font-face {
   font-family: 'Nanum Gothic';
-  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot) format('embedded-opentype'),
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Nanum Gothic Coding';
-  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot) format('embedded-opentype'),
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
 }
+		label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', sans-serif; }
+		
+		div.mw-geshi div,
+div.mw-geshi div pre,
+div.mw-geshi div span,
+span.mw-geshi,
+pre.source-css,
+pre.source-javascript,
+pre {
+    font-family: '니눔고딕코딩', 'Nanum Gothic Coding', monospace !important;
+}
 
-
-label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', 'sans-serif'; }
-div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: '니눔고딕코딩', 'Nanum Gothic Coding', 'monospace'; }
-
-.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
+	.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
     list-style-image: none;
 }
@@ -794,25 +803,8 @@ img {
 }
 iframe {
     max-width: 100%;
+    height: auto;
 }
-#spy p a {
-    border: 1px solid #aaaaaa;
-    border-radius: 0.25rem;
-    padding: 5px 10px 5px 10px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-    font-size: 14px;
-    color: black;
-    margin-left: -10px;
-}
-#spy p a:hover {
-    text-decoration: none;
-}
-.comments-block-user {
-    display: inline-flex;
-}
-#spy p a:focus {
-    text-decoration: none;
 .col-lg-4.col-sm-4 a{
     color: #aa7949 !important;
 }
