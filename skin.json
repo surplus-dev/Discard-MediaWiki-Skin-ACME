@@ -6,7 +6,7 @@
 	"url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
 	"descriptionmsg": "kiwitic-desc",
 	"namemsg": "skinname-kiwitic",
-	"license-name": "FREE LICENSE",
+	"license-name": "MIT",
 	"type": "skin",
 	"version": "Release",
 	"ValidSkinNames": {
@@ -17,6 +17,9 @@
 						"i18n"
 		],
 	},
+	"requires": {
+		"MediaWiki": ">= 1.26.0"
+    },
 	"ResourceModules": {
 		"skins.kiwitic": {
 			"styles": {
@@ -48,5 +51,5 @@
 	"AutoloadClasses": {
 		"SkinKiwitic": "kiwitic.skin.php",
 		"KiwiticTemplate": "kiwitic.skin.php"
-	},
+	}
 }
