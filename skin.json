@@ -24,13 +24,13 @@
 				"css/theme.css": {
 					"media": "all"
 				},
-				"css/style-responsive.css": {
+				"css/bootstrap-reset.css": {
 					"media": "all"
 				},
 				"css/style.css": {
 					"media": "all"
 				},
-				"css/bootstrap-reset.css": {
+				"css/style-responsive.css": {
 					"media": "all"
 				}
 			},
