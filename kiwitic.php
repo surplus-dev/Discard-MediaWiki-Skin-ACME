@@ -27,12 +27,6 @@ $wgResourceModules['skins.kiwitic'] = array(
 		$skinDir . '/css/style.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
 	),
-	'dependencies' => array(
-		'jquery',
-		'jquery.mwExtension',
-		'jquery.client',
-		'jquery.cookie',
-	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
 );
