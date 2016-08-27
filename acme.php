@@ -9,7 +9,7 @@ $wgExtensionCredits['skin'][] = array(
 	'author'      => 'cosmic 원본, 김동동 수정<br>2DU 더 수정',
 	'description' => 'acme 부트스트랩 테마를 미디어위키에 적용합니다.',
         'license-name' => "Free License",
-        'version' => '16-08-20 일반',
+        'version' => '16-08-27 일반',
 );
 
 $wgValidSkinNames['acme'] = 'Acme';
@@ -26,12 +26,6 @@ $wgResourceModules['skins.acme'] = array(
 		$skinDir . '/css/bootstrap-reset.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
-	),
-	'dependencies' => array(
-		'jquery',
-		'jquery.mwExtension',
-		'jquery.client',
-		'jquery.cookie',
 	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],

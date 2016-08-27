@@ -308,7 +308,6 @@ ul {
 
 @font-face {
   font-family: 'Nanum Gothic';
-  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
   src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
@@ -316,25 +315,16 @@ ul {
 }
 @font-face {
   font-family: 'Nanum Gothic Coding';
-  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot);
   src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot?#iefix) format('embedded-opentype'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
 }
-		label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', sans-serif; }
-		
-		div.mw-geshi div,
-div.mw-geshi div pre,
-div.mw-geshi div span,
-span.mw-geshi,
-pre.source-css,
-pre.source-javascript,
-pre {
-    font-family: '니눔고딕코딩', 'Nanum Gothic Coding', monospace !important;
-}
 
-	.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
+label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', 'sans-serif'; }
+div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: '니눔고딕코딩', 'Nanum Gothic Coding', 'monospace'; }
+
+.mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
     list-style-image: none;
 }
@@ -793,6 +783,45 @@ blockquote {
 #external_nico_0 {
     max-width: 100%;
 }
+.c-order-select form {
+    display: none;
+}
+.c-score {
+    display: none;
+}
+.c-item {
+    width: 100%;
+}
+textarea#comment {
+    width: 100%;
+}
+.c-container {
+    margin: 0px 0px 0px 0px;
+}
+.f-message {
+    width: 100%;
+}
+.c-avatar {
+    display: none;
+}
+.c-item {
+    padding: 10px;
+}
+.c-order {
+    padding: 0px 0px;
+}
+#allcomments {
+    margin-top: -40px;
+}
+.c-actions {
+    margin: 5px 0px 0px 0px;
+}
+.c-actions p {
+    margin: 0;
+}
+.reply {
+    margin-left: 0px !important;
+}
 .mw-highlight.mw-content-ltr pre br {
     display: none;
 }
@@ -819,4 +848,23 @@ iframe {
 }
 #searchInput {
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+}
+#spy p a {
+    border: 1px solid #aaaaaa;
+    border-radius: 0.25rem;
+    padding: 5px 10px 5px 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+    font-size: 14px;
+    color: black;
+    margin-left: -10px;
+}
+#spy p a:hover {
+    text-decoration: none;
+}
+.comments-block-user {
+    display: inline-flex;
+}
+#spy p a:focus {
+    text-decoration: none;
 }

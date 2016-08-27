@@ -18,6 +18,16 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
+		$out->addMeta('twitter:card', 'summary');
+		$out->addMeta('twitter:site', '@wsilog');
+		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
+		$out->addMeta('twitter:description', $out->mBodytext );
+		$out->addMeta('twitter:creator', '@wikicocoa');
+		$out->addMeta('twitter:image', 'https://wsilog.xyz/test/images/b/b6/wsilog.png');
+//		크롬, 파이어폭스 OS, 오페라
+		$out->addMeta('theme-color', '#34495E');
+//		윈도우 폰
+		$out->addMeta('msapplication-navbutton-color', '#34495E'); 
 	}//end initPage
 
 	/**
@@ -31,10 +41,6 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleStyles( 'skins.acme' );
 		
 		$out->addStyle( 'acme/font-awesome/css/font-awesome.min.css' );
-		//		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#34495E');
-//		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#34495E'); 
 
 	}//end setupSkinUserCss
 }
@@ -63,22 +69,21 @@ class AcmeTemplate extends BaseTemplate {
 		$this->html('headelement');
 		?>
 		<!--header start-->
-		<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="<?php echo $url_prefix; ?>skins/acme/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
-</head>
-    <header class="head-section">
-      <div class="navbar navbar-default navbar-static-top container">
-          <div class="navbar-header">
-              <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
-              type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='<?php echo $wgLogo; ?>' width='200px'></a>
-          </div>
+		<script src="<?php echo $url_prefix; ?>skins/acme/js/jquery.min.js" charset='utf-8'></script>
+		<script src="<?php echo $url_prefix; ?>skins/acme/js/bootstrap.min.js" charset='utf-8'></script>
+		<script async src="<?php echo $url_prefix; ?>skins/acme/js/adsbygoogle.js"></script>
+		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+		<script src="<?php echo $url_prefix; ?>skins/acme/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
+		<header class="head-section">
+		<div class="navbar navbar-default navbar-static-top container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
+				<span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='<?php echo $wgLogo; ?>' width='200px'></a>
+			</div>
 
-          <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-			  <li id="right-search">
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+				<li id="right-search">
 					<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform" role="search">
 						<input style="display: block;" class="form-control search" type="search" name="search" placeholder="Search" title=" Search <?php echo $wgSitename; ?> [ctrl-option-f]" accesskey="f" id="searchInput" autocomplete="off">
 						<input type="hidden" name="title" value="특수:검색">
@@ -102,14 +107,14 @@ class AcmeTemplate extends BaseTemplate {
 								echo $this->makeListItem( $key, $item );
 							}
 						?>
-<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
+						<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
 						
 						</ul>
 				</li>
 				
 				<?php if ($wgUser->isLoggedIn()) {
-				
+					
 				function loginBox() {
 					global $wgUser, $wgRequest;
 				}
@@ -124,9 +129,9 @@ class AcmeTemplate extends BaseTemplate {
 							$result = mt_rand(1, 10000);
 							$email = $result."?d=identicon&f=y";
 						}
-					}
+					}	
+				?>
 				
-            ?>
 				<li class="dropdown">
 				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img style='width: 32px;' class="profile-img" src="https://secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
@@ -184,6 +189,7 @@ class AcmeTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<!-- 광고 -->
+	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
@@ -200,20 +206,16 @@ class AcmeTemplate extends BaseTemplate {
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="<?php echo $url_prefix; ?>index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
-<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo $url_prefix.'index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
-</a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i>
-</a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
-</a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
-</a></div>
+	<div class="scroll-buttons"><a class="random-link" href="<?php echo $url_prefix; ?>index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i><span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo $url_prefix.'index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></div>
 	<!--small footer start -->
     <footer class="footer-small" id="footer">
         <div class="container">
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a href="https://www.mediawiki.org"><img class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
-					<a href="https://shapebootstrap.net"><img class="pull-right" style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
+					<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ko"><img class="pull-right" src="https://licensebuttons.net/p/zero/1.0/88x31.png"></a>
+					<a href="https://www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
+					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
                   </div>
             </div>
         </div>
