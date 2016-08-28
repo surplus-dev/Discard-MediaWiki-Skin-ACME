@@ -879,3 +879,6 @@ iframe {
     padding-bottom: 0px;
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
+#sitenotice li {
+    margin-left: 20px;
+}
