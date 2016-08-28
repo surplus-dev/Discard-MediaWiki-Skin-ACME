@@ -69,11 +69,7 @@ class AcmeTemplate extends BaseTemplate {
 		$this->html('headelement');
 		?>
 		<!--header start-->
-		<script src="<?php echo $url_prefix; ?>skins/acme/js/jquery.min.js" charset='utf-8'></script>
-		<script src="<?php echo $url_prefix; ?>skins/acme/js/bootstrap.min.js" charset='utf-8'></script>
-		<script async src="<?php echo $url_prefix; ?>skins/acme/js/adsbygoogle.js"></script>
 		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-		<script src="<?php echo $url_prefix; ?>skins/acme/js/Gadget-ReferenceTooltips-ko.js" charset='utf-8'></script>
 		<header class="head-section">
 		<div class="navbar navbar-default navbar-static-top container">
 			<div class="navbar-header">
