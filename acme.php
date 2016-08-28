@@ -27,6 +27,12 @@ $wgResourceModules['skins.acme'] = array(
 		$skinDir . '/css/style.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
 	),
+	'scripts' => array(
+		$skinDir . '/js/jquery.min.js',
+		$skinDir . '/js/bootstrap.min.js',
+		$skinDir . '/js/adsbygoogle.js',
+		$skinDir . '/js/Gadget-ReferenceTooltips-ko.js',
+	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
 );
