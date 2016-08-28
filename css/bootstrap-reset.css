@@ -833,3 +833,13 @@ height: auto;
 div#msupload-bottom {
     height: auto;
 }
+#sitenotice {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: #aaa 1px solid;
+    border-radius: 3px;
+    margin-top: -30px;
+    background-color: #f9f9f9;
+    padding-bottom: 0px;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+}

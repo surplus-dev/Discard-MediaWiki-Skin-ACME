@@ -223,6 +223,14 @@ class KiwiticTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
+	<?php if ( $this->data['sitenotice'] && $_COOKIE['alertcheck'] != "yes" ) { ?>
+		<div id="sitenotice">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<?php $this->html( 'sitenotice' ) ?>
+		</div>
+	<?php } ?>
 	<!--상단 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
 	<!--상단 광고 끝 -->
