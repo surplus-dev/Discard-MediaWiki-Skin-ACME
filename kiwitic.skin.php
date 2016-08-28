@@ -122,6 +122,7 @@ class KiwiticTemplate extends BaseTemplate {
 					    <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서 목록을 불러옵니다.' ) ); ?></li>
 						<li id="t-upload"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'upload', null ), '업로드', array( 'title' => '파일을 올립니다.' ) ); ?></li>
+						<li id="t-short"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'UrlShortener', null ), '단축 URL', array( 'title' => '단축 URL을 생성합니다.' ) ); ?></li>
 						<li id="t-want"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'WantedPages', null ), '필요한 문서', array( 'title' => '필요한 문서 목록입니다.' ) ); ?></li>
 						</ul>
 				</li>
