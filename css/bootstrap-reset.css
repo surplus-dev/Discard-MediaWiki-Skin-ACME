@@ -830,3 +830,6 @@ iframe {
 div#msupload-dropzone{
 height: auto;
 }
+div#msupload-bottom {
+    height: auto;
+}
