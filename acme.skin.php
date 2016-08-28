@@ -184,6 +184,14 @@ class AcmeTemplate extends BaseTemplate {
 	
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
+<?php if ( $this->data['sitenotice'] && $_COOKIE['alertcheck'] != "yes" ) { ?>
+                        <div id="sitenotice">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <?php $this->html( 'sitenotice' ) ?>
+                        </div>
+<?php } ?>
 	<!-- 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<!-- 광고 끝 -->
