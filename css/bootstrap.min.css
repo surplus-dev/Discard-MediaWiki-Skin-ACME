@@ -46,7 +46,7 @@ table.wikitable th, table.wikitable > tr > th, table.wikitable > * > tr > th {
 	padding: 0.3em;
 	border-left: none;
 	border-right: none;
-	border-top: 1px solid #aaa;
+	border-top: 0px solid #aaa;
 	border-bottom: 1px solid #aaa;
 }
 table.wikitable td, table.wikitable > tr > td, table.wikitable > * > tr > td {
