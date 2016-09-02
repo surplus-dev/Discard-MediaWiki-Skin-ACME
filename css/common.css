@@ -1,0 +1,1284 @@
+/*
+ * 위키백과에서 가져왔습니다. - 
+ */
+
+/* HTML 요소의 기본 스타일. en:에서 가져옴 */
+dfn {
+    font-style: inherit;  /* Reset default styling for <dfn> */
+}
+sup, sub {
+    line-height: 1em;     /* <sup>와 <sub>의 줄간격 조절 */
+}
+
+/** <references/> 관련 CSS **/
+
+ol.references,
+div.reflist,
+div.refbegin {
+    font-size: 90%;            /* 기본 글꼴 크기 */
+    margin-bottom: 0.5em;
+}
+div.refbegin-100 {
+    font-size: 100%;           /* Option for normal fontsize in {{refbegin}} */
+}
+div.reflist ol.references {
+    font-size: 100%;           /* Reset font-size when nested in div.reflist */
+    list-style-type: inherit;  /* Enable custom list style types */
+}
+
+/* 선택된 항목에 배경색 씌우기 */
+body.action-info :target,
+.citation:target {
+    background-color: #DEF;  /* Fallback */
+    background-color: rgba(0, 127, 255, 0.133);
+}
+
+/* 테이블 제목 등의 ref에서 bold/italic 제거 */
+sup.reference {
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 인용에 대한 스타일 추가 (CSS3). 예를 들어 URL이 너무 길면 상자를 벗어나지 않고 잘라냄. */
+.citation {
+    word-wrap: break-word;
+}
+ 
+/* Default styling for titles of works, styling for the title of an article
+   within a periodical, or a contribution within a compilation. */
+cite,
+.citation cite.article,
+.citation cite.contribution {
+    font-style: inherit;
+}
+
+/* For linked citation numbers and document IDs, where
+   the number need not be shown on a screen or a handheld,
+   but should be included in the printed version */
+@media screen, handheld {
+    .citation *.printonly {
+        display: none;
+    }
+}
+
+/** .messagebox 스타일 **/
+.messagebox.merge {
+    border: 1px solid #c0b8cc;
+    background-color: #f0e5ff;
+    text-align: center;
+}
+.messagebox.cleanup {
+    border: 1px solid #9f9fff;
+    background-color: #efefff;
+    text-align: center;
+}
+.messagebox.standard-talk {
+    border: 1px solid #c0c090;
+    background-color: #f8eaba;
+    margin: 4px auto;
+}
+/* For old WikiProject banners inside banner shells. */
+.mbox-inside .standard-talk,
+.messagebox.nested-talk {
+    border: 1px solid #c0c090;
+    background-color: #f8eaba;
+    width: 100%;
+    margin: 2px 0;
+    padding: 2px;
+}
+.messagebox.small {
+    width: 238px;
+    font-size: 85%;
+    /* @noflip */
+    float: right;
+    clear: both;
+    /* @noflip */
+    margin: 0 0 1em 1em;
+    line-height: 1.25em;
+}
+.messagebox.small-talk {
+    width: 238px;
+    font-size: 85%;
+    /* @noflip */
+    float: right;
+    clear: both;
+    /* @noflip */
+    margin: 0 0 1em 1em;
+    line-height: 1.25em;
+    background: #F8EABA;
+}
+
+/* Cell sizes for ambox/tmbox/imbox/cmbox/ombox/fmbox/dmbox message boxes */
+th.mbox-text, td.mbox-text {   /* The message body cell(s) */
+    border: none;
+    /* @noflip */
+    padding: 0.25em 0.9em;     /* 0.9em left/right */
+    width: 100%;               /* Make all mboxes the same width regardless of text length */
+    font-size: small;
+}
+td.mbox-image {                /* The left image cell */
+    border: none;
+    /* @noflip */
+    padding: 2px 0 2px 0.9em;  /* 0.9em left, 0px right */
+    text-align: center;
+}
+td.mbox-imageright {           /* The right image cell */
+    border: none;
+    /* @noflip */
+    padding: 2px 0.9em 2px 0;  /* 0px left, 0.9em right */
+    text-align: center;
+}
+td.mbox-empty-cell {           /* An empty narrow cell */
+    border: none;
+    padding: 0;
+    width: 1px;
+}
+
+/* Article message box styles */
+table.ambox {
+    margin: 0 10%;                  /* 10% = Will not overlap with other elements */
+    border: 1px solid #aaa;
+    /* @noflip */
+    border-left: 10px solid #1e90ff;  /* Default "notice" blue */
+    background: #fbfbfb;
+}
+table.ambox + table.ambox {      /* Single border between stacked boxes. */
+    margin-top: -1px;
+}
+.ambox th.mbox-text,
+.ambox td.mbox-text {            /* The message body cell(s) */
+    padding: 0.25em 0.5em;       /* 0.5em left/right */
+}
+.ambox td.mbox-image {           /* The left image cell */
+    /* @noflip */
+    padding: 2px 0 2px 0.5em;    /* 0.5em left, 0px right */
+}
+.ambox td.mbox-imageright {      /* The right image cell */
+    /* @noflip */
+    padding: 2px 0.5em 2px 0;    /* 0px left, 0.5em right */
+}
+
+table.ambox-notice {
+    /* @noflip */
+    border-left: 10px solid #1e90ff;    /* Blue */
+}
+table.ambox-speedy {
+    /* @noflip */
+    border-left: 10px solid #b22222;    /* Red */
+    background: #fee;                   /* Pink */
+}
+table.ambox-delete {
+    /* @noflip */
+    border-left: 10px solid #b22222;    /* Red */
+}
+table.ambox-content {
+    /* @noflip */
+    border-left: 10px solid #f28500;    /* Orange */
+}
+table.ambox-style {
+    /* @noflip */
+    border-left: 10px solid #f4c430;    /* Yellow */
+}
+table.ambox-move {
+    /* @noflip */
+    border-left: 10px solid #9932cc;    /* Purple */
+}
+table.ambox-protection {
+    /* @noflip */
+    border-left: 10px solid #bba;       /* Gray-gold */
+}
+
+/* Image message box styles */
+table.imbox {
+    margin: 4px 10%;
+    border-collapse: collapse;
+    border: 3px solid #1e90ff;    /* Default "notice" blue */
+    background: #fbfbfb;
+}
+.imbox .mbox-text .imbox {  /* For imboxes inside imbox-text cells. */
+    margin: 0 -0.5em;       /* 0.9 - 0.5 = 0.4em left/right.        */
+    display: block;         /* Fix for webkit to force 100% width.  */
+}
+.mbox-inside .imbox {       /* For imboxes inside other templates.  */
+    margin: 4px;
+}
+
+table.imbox-notice {
+    border: 3px solid #1e90ff;    /* Blue */
+}
+table.imbox-speedy {
+    border: 3px solid #b22222;    /* Red */
+    background: #fee;             /* Pink */
+}
+table.imbox-delete {
+    border: 3px solid #b22222;    /* Red */
+}
+table.imbox-content {
+    border: 3px solid #f28500;    /* Orange */
+}
+table.imbox-style {
+    border: 3px solid #f4c430;    /* Yellow */
+}
+table.imbox-move {
+    border: 3px solid #9932cc;    /* Purple */
+}
+table.imbox-protection {
+    border: 3px solid #bba;       /* Gray-gold */
+}
+table.imbox-license {
+    border: 3px solid #88a;       /* Dark gray */
+    background: #f7f8ff;          /* Light gray */
+}
+table.imbox-featured {
+    border: 3px solid #cba135;    /* Brown-gold */
+}
+
+/* Category message box styles */
+table.cmbox {
+    margin: 3px 10%;
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    background: #DFE8FF;    /* Default "notice" blue */
+}
+
+table.cmbox-notice {
+    background: #D8E8FF;    /* Blue */
+}
+table.cmbox-speedy {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 4px solid #b22222;    /* Red */
+    background: #FFDBDB;          /* Pink */
+}
+table.cmbox-delete {
+    background: #FFDBDB;    /* Red */
+}
+table.cmbox-content {
+    background: #FFE7CE;    /* Orange */
+}
+table.cmbox-style {
+    background: #FFF9DB;    /* Yellow */
+}
+table.cmbox-move {
+    background: #E4D8FF;    /* Purple */
+}
+table.cmbox-protection {
+    background: #EFEFE1;    /* Gray-gold */
+}
+
+/* Other pages message box styles */
+table.ombox {
+    margin: 4px 10%;
+    border-collapse: collapse;
+    border: 1px solid #aaa;       /* Default "notice" gray */
+    background: #f9f9f9;
+}
+
+table.ombox-notice {
+    border: 1px solid #aaa;       /* Gray */
+}
+table.ombox-speedy {
+    border: 2px solid #b22222;    /* Red */
+    background: #fee;             /* Pink */
+}
+table.ombox-delete {
+    border: 2px solid #b22222;    /* Red */
+}
+table.ombox-content {
+    border: 1px solid #f28500;    /* Orange */
+}
+table.ombox-style {
+    border: 1px solid #f4c430;    /* Yellow */
+}
+table.ombox-move {
+    border: 1px solid #9932cc;    /* Purple */
+}
+table.ombox-protection {
+    border: 2px solid #bba;       /* Gray-gold */
+}
+
+/* Talk page message box styles */
+table.tmbox {
+    margin: 4px 10%;
+    border-collapse: collapse;
+    border: 1px solid #c0c090;    /* Default "notice" gray-brown */
+    background: #f8eaba;
+}
+.mediawiki .mbox-inside .tmbox { /* For tmboxes inside other templates. The "mediawiki" class ensures that */
+    margin: 2px 0;               /* this declaration overrides other styles (including mbox-small above)   */
+    width: 100%;                 /* For Safari and Opera */
+}
+.mbox-inside .tmbox.mbox-small { /* "small" tmboxes should not be small when  */
+    line-height: 1.5em;          /* also "nested", so reset styles that are   */
+    font-size: 100%;             /* set in "mbox-small" above.                */
+}
+
+table.tmbox-speedy {
+    border: 2px solid #b22222;    /* Red */
+    background: #fee;             /* Pink */
+}
+table.tmbox-delete {
+    border: 2px solid #b22222;    /* Red */
+}
+table.tmbox-content {
+    border: 2px solid #f28500;    /* Orange */
+}
+table.tmbox-style {
+    border: 2px solid #f4c430;    /* Yellow */
+}
+table.tmbox-move {
+    border: 2px solid #9932cc;    /* Purple */
+}
+table.tmbox-protection,
+table.tmbox-notice {
+    border: 1px solid #c0c090;    /* Gray-brown */
+}
+
+/* Disambig and set index box styles */
+table.dmbox {
+    clear: both;
+    margin: 0.9em 1em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+}
+
+/* Footer and header message box styles */
+table.fmbox {
+    clear: both;
+    margin: 0.2em 0;
+    width: 100%;
+    border: 1px solid #aaa;
+    background: #f9f9f9;     /* Default "system" gray */
+}
+table.fmbox-system {
+    background: #f9f9f9;
+}
+table.fmbox-warning {
+    border: 1px solid #bb7070;  /* Dark pink */
+    background: #ffdbdb;        /* Pink */
+}
+table.fmbox-editnotice {
+    background: transparent;
+}
+/* Div based "warning" style fmbox messages. */
+div.mw-warning-with-logexcerpt,
+div.mw-lag-warn-high,
+div.mw-cascadeprotectedwarning,
+div#mw-protect-cascadeon,
+div.titleblacklist-warning,
+div.locked-warning {
+    clear: both;
+    margin: 0.2em 0;
+    border: 1px solid #bb7070;
+    background: #ffdbdb;
+    padding: 0.25em 0.9em;
+}
+/* Div based "system" style fmbox messages.
+   Used in [[MediaWiki:Readonly lag]]. */
+div.mw-lag-warn-normal,
+div.fmbox-system {
+    clear: both;
+    margin: 0.2em 0;
+    border: 1px solid #aaa;
+    background: #f9f9f9;
+    padding: 0.25em 0.9em;
+}
+
+/* These mbox-small classes must be placed after all other
+   ambox/tmbox/ombox etc classes. "body.mediawiki" is so
+   they override "table.ambox + table.ambox" above. */
+body.mediawiki table.mbox-small {   /* For the "small=yes" option. */
+    /* @noflip */
+    clear: right;
+    /* @noflip */
+    float: right;
+    /* @noflip */
+    margin: 4px 0 4px 1em;
+    width: 238px;
+    font-size: 88%;
+    line-height: 1.25em;
+}
+body.mediawiki table.mbox-small-left {   /* For the "small=left" option. */
+    /* @noflip */
+    margin: 4px 1em 4px 0;
+    width: 238px;
+    border-collapse: collapse;
+    font-size: 88%;
+    line-height: 1.25em;
+}
+
+/* Style for compact ambox */
+/* Hide the images */
+.compact-ambox table .mbox-image,
+.compact-ambox table .mbox-imageright,
+.compact-ambox table .mbox-empty-cell {
+    display: none;
+}
+/* Remove borders, backgrounds, padding, etc. */
+.compact-ambox table.ambox {
+    border: none;
+    border-collapse: collapse;
+    background: transparent;
+    margin: 0 0 0 1.6em !important;
+    padding: 0 !important;
+    width: auto;
+    display: block;
+}
+body.mediawiki .compact-ambox table.mbox-small-left {
+    font-size: 100%;
+    width: auto;
+    margin: 0;
+}
+/* Style the text cell as a list item and remove its padding */
+.compact-ambox table .mbox-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.compact-ambox table .mbox-text-span {
+    display: list-item;
+    line-height: 1.5em;
+    list-style-type: square;
+    list-style-image: url(/w/skins/MonoBook/bullet.gif);
+}
+.skin-vector .compact-ambox table .mbox-text-span {
+    list-style-type: disc;
+    list-style-image: url(/w/skins/Vector/images/bullet-icon.svg);
+    list-style-image: url(/w/skins/Vector/images/bullet-icon.png)\9;
+}
+/* Allow for hiding text in compact form */
+.compact-ambox .hide-when-compact {
+    display: none;
+}
+
+/* 틀 설명문서 */
+.template-documentation {
+    clear: both;
+    margin: 1em 0 0 0;
+    border: 1px solid #aaa; 
+    background-color: #ecfcf4; 
+    padding: 1em;
+}
+
+/** 정보상자 **/
+.infobox {
+  float: right;
+  clear: right;
+  margin: 0.5em 0 0.5em 1em;
+  padding: 0.2em;
+  border: 1px solid #aaa;
+  background: #f9f9f9;
+  font-size: small;
+  width: 25em;
+}
+.infobox td,
+.infobox th {
+  vertical-align: top;
+}
+.infobox caption {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.infobox caption.colored {
+  margin: 0.25em 0 0.5em 0;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-width: 0.3em;
+  border-bottom-width: 0.3em;
+/* 제목에 색이 필요할 때 class 지정 후 border-color 스타일 지정 */
+}
+
+.infobox th {
+  white-space: nowrap;
+}
+.infobox th[colspan="2"] {
+  text-align: center;
+}
+.infobox.bordered {
+  border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+  border: 1px solid #aaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+  border: 0;
+}
+.infobox.sisterproject {
+  width: 20em;
+  font-size: smaller;
+}
+
+/* styles for bordered infobox with merged rows */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+  border: 0;
+  border-right: 1px solid #aaa;
+}
+
+/* styles for geography infoboxes, e.g. countries, country subdivisions, cities, etc. */
+.infobox.geography {
+  text-align: left;
+  border-collapse: collapse;
+  line-height: 1.2em;
+  font-size: smaller;
+}
+.infobox.geography  td,
+.infobox.geography  th {
+  border-top: solid 1px #aaa;
+  padding: 0.4em 0.6em;
+}
+.infobox.geography .mergedtoprow td,
+.infobox.geography .mergedtoprow th {
+  border-top: solid 1px #aaa;
+  padding: 0.4em 0.6em 0.2em;
+}
+.infobox.geography .mergedrow td,
+.infobox.geography .mergedrow th {
+  border: 0;
+  padding: 0 0.6em 0.2em;
+}
+.infobox.geography .mergedbottomrow td,
+.infobox.geography .mergedbottomrow th {
+  border-top: 0;
+  border-bottom: solid 1px #aaa;
+  padding: 0 0.6em 0.4em;
+}
+.infobox.geography .maptable td,
+.infobox.geography .maptable th {
+  border: 0;
+  padding: 0;
+}
+
+/* "notices" 스타일 */
+.notice {
+  margin: 1em;
+  padding: 0.2em;
+}
+
+.notice.section {
+  width: auto;
+  margin: 0 1em 0 1em;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  font-size: smaller;
+}
+.notice.section + .notice.section {
+  margin-top: -1px;
+  border-top: 0;
+}
+
+#disambig {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.spoiler {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+table.stub {
+  width: 100%;
+  margin: 1em auto 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: smaller;
+}
+table.stub + table.stub {
+  margin-top: -1px;
+  border-top: 0;
+}
+
+/* Put a checker background at the image description page only visible if the image has transparent background */
+#file img {background: url("//upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;}
+
+#wpSave {
+  font-weight: bold;
+}
+
+/*[[미디어위키토론:Common.css#.jamocomposed_block 수정]]-Request by Banwol, added by 분당선M*/
+.jamocomposed_block {
+ font-family: '함초롬돋움 LVT', 'HCR Dotum LVT', '함초롬바탕 LVT', 'HCR Batang LVT', '본고딕', 'Source Han Sans K', '본고딕 KR', 'Source Han Sans KR', 'Noto Sans CJK KR', '나눔바른고딕 옛한글', 'NanumBarunGothic YetHangul', '나눔명조 옛한글', 'NanumMyeongjo YetHangul', '은 바탕', 'Un Batang', '돋움 옛한글', 'Dotum Old Hangul', '바탕 옛한글', 'Batang Old Hangul', '굴림 옛한글', 'NewGulim Old Hangul', '궁서 옛한글', 'Gungsuh Old Hangul', '맑은 고딕', 'Malgun Gothic', '함초롬돋움', 'HCR Dotum', '함초롬바탕', 'HCR Batang', Code2000;
+}
+
+.oldhanyang {
+  font-family: "New Gulim", "새굴림", "새돋움", "한컴돋움", "Naver Dictionary", "네이버사전", "Haansoft Batang", "한컴바탕", "새바탕";
+}
+
+/* 링크 밀줄 제거 */
+.nounderlines a {
+  text-decoration: none;
+}
+/* IPA 링크 밑줄 제거 */
+.IPA a:link, .IPA a:visited {
+  text-decoration: none;
+}
+
+/* [[위키백과:사랑방/2007년 1월#틀:듣기 용 아이콘]] */
+.audiolink a{
+  background: url("//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png") center left no-repeat !important;
+  padding-left: 16px !important;
+  padding-right: 0 !important;
+}
+
+/* [[위키백과:사랑방/2007년 4월#영어판의 틀을 번역했는데, 모양이 다르게 나옵니다.]]
+   [[:en:MediaWiki:Common.css]]에서 가져옴 */
+
+/* 둘러보기 상자의 기본 스킨 */
+table.navbox {      /* 둘러보기 상자 내용에 대한 스타일 */
+  border: 1px solid #aaa;
+  width: 100%;
+  margin: auto;
+  clear: both;
+  font-size: 88%;
+  text-align: center;
+  padding: 1px;
+}
+table.navbox + table.navbox {  /* Single pixel border between adjacent navboxes */
+  margin-top: -1px;      /* (doesn't work for IE6, but that's okay)     */
+}
+.navbox-title,
+.navbox-abovebelow,
+table.navbox th {
+  text-align: center;    /* Title and above/below styles */
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navbox-group {      /* 그룹 스타일 */
+  white-space: nowrap;
+  text-align: right;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navbox, .navbox-subgroup {
+  background: #fdfdfd;   /* 배경색 */
+}
+.navbox-list {
+  border-color: #fdfdfd;   /* 배경색과 동일해야 함 */
+}
+.navbox-title,
+table.navbox th {
+  background: #ccccff;   /* Level 1 color */
+}
+.navbox-abovebelow,
+.navbox-group,
+.navbox-subgroup .navbox-title {
+  background: #ddddff;   /* Level 2 color */
+}
+.navbox-subgroup .navbox-group, .navbox-subgroup .navbox-abovebelow {
+  background: #e6e6ff;   /* Level 3 color */
+}
+.navbox-even {
+  background: #f7f7f7;   /* Even row striping */
+}
+.navbox-odd {
+  background: transparent; /* Odd row striping */
+}
+
+.collapseButton {      /* 'show'/'hide' buttons created dynamically */
+  float: right;      /* by the CollapsibleTables javascript in  */
+  font-weight: normal;   /* [[MediaWiki:Common.js]]are styled here  */
+  text-align: right;   /* so they can be customised.        */
+  width: auto;
+}
+.navbox .collapseButton {  /* In navboxes, the show/hide button balances */
+  width: 6em;      /* the vde links from [[Template:Tnavbar]],   */
+}              /* so they need to be the same width.     */
+
+/* [[위키백과:관리자 요청/2007년 5월#스크립트 추가 요청]]. ctrl+v from en: */
+div.NavFrame {
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #aaa;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 95%;
+}
+div.NavFrame + div.NavFrame {
+  border-top-style: none;
+  border-top-style: hidden;
+}
+div.NavPic {
+  background-color: #fff;
+  margin: 0;
+  padding: 2px;
+  float: left;
+}
+div.NavFrame div.NavHead {
+  height: 1.6em;
+  font-weight: bold;
+  background-color: #ccf;
+  position: relative;
+}
+div.NavFrame p,
+div.NavFrame div.NavContent,
+div.NavFrame div.NavContent p {
+  font-size: 100%;
+}
+div.NavEnd {
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
+  clear: both;
+}
+a.NavToggle {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-weight: normal;
+  font-size: 90%;
+}
+
+/* [[위키백과:관리자 요청/2007년 11월]] */
+/* Prevent line breaks in silly places:
+   1) Where desired
+   2) Links when we don't want them to
+   3) Bold "links" to the page itself
+   4) Ref tags with group names <ref group="Note"> --> "[Note 1]" */
+.nowrap,
+.nowraplinks a,
+.nowraplinks .selflink,
+sup.reference a {
+    white-space: nowrap;
+}
+
+/** 목차에서 특정 단계 이하 제목 숨기기 **/
+.toclimit-2 .toclevel-2,
+.toclimit-3 .toclevel-3,
+.toclimit-4 .toclevel-4,
+.toclimit-5 .toclevel-5,
+.toclimit-6 .toclevel-6,
+.toclimit-7 .toclevel-7 {
+  display:none;
+}
+
+/* {{가로 목차}} 틀 사용 시 세로로 출력되는 문제 수정 (크롬/오페라)
+영어 위키백과에서 가져옴 Ykhwong 2015년 12월 4일 */
+.hlist .tocnumber,
+.hlist .toctext {
+    display: inline;
+}
+
+/* When <div class="nonumtoc"> is used on the table of contents,
+   the ToC will display without numbers */
+.nonumtoc .tocnumber {
+    display: none;
+}
+.nonumtoc #toc ul,
+.nonumtoc .toc ul {
+    line-height: 1.5em;
+    list-style: none none;
+    margin: .3em 0 0;
+    padding: 0;
+}
+.hlist.nonumtoc #toc ul ul,
+.hlist.nonumtoc .toc ul ul {
+    /* @noflip */
+    margin: 0;
+}
+
+/** 미디어 시작 틀과 관련된 코드 **/
+/* [[위키백과:관리자 요청/2008년 9월]] */
+div.listenlist {
+  background: url("//upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png");
+  padding-left: 40px;
+}
+
+div.videolist, div.multivideolist {
+  background: url("//upload.wikimedia.org/wikipedia/en/thumb/2/20/Tango-video-x-generic.png/40px-Tango-video-x-generic.png");
+  padding-left: 50px;
+}
+
+div.medialist {
+  min-height: 50px;
+  margin: 1em;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+div.medialist ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+}
+div.medialist ul li {
+  padding-bottom: 0.5em;
+}
+div.medialist ul li li {
+  font-size: smaller;
+  padding-bottom: 0;
+}
+
+/** XXX **/
+/* 안내 참조 틀의 동작, [[위키백과:관리자 요청/2008년 9월]] */
+.plainlinksneverexpand {
+  background: none ! important;
+  padding: 0 ! important;
+}
+.plainlinksneverexpand .urlexpansion {
+  display: none ! important;
+}
+
+/** PDF 링크 모양 **/
+/* [[특:Permalink/13592922#PDF 아이콘 추가|미디어위키토론:Common.css]] */
+a[href$=".pdf"].external.text,
+a[href*=".pdf?"].external.text,
+a[href*=".pdf#"].external.text,
+a[href$=".PDF"].external.text,
+a[href*=".PDF?"].external.text,
+a[href*=".PDF#"].external.text {
+  background: url(//upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif) center right no-repeat;
+  padding-right: 17px;
+}
+
+/** [[틀:둘러보기]] 디자인 **/
+/* [[위키백과토론:위키프로젝트 시스템#미디어위키:common.css에 스타일 추가 요청]] */
+/* Klutzy 2008년 12월 21일 (일) 20:10 (KST) */
+.pathnavbox {
+  clear: both;
+  border: 1px outset #eef;
+  padding: 0.3em 0.6em;
+  margin: 0 0 0.5em 0;
+  background-color: #eef;
+  font-size: smaller;
+}
+.pathnavbox ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.pathnavbox > ul {
+  margin: 0;
+}
+.pathnavbox ul li {
+  margin: 0;
+}
+
+/** 최근 바뀜, 주시 문서 목록에서 "되돌리기" 글자 크기 줄임 **/
+/* [[사용자:ITurtle|iTurtle]] ([[사용자토론:ITurtle|토론]]) 2009년 5월 8일 (금) 22:04 (KST) */
+.page-특수기능_최근바뀜 .mw-rollback-link,
+.page-특수기능_주시문서목록 .mw-rollback-link {
+  font-size: smaller;
+}
+
+/* 최근 바뀜에서의 편집 관련 표시 작게. Monobook에서 옮김. */
+/* ChongDae 2010년 3월 26일 (금) 22:32  */
+.minoredit {
+  font-size: smaller;
+  color: #808080;
+}
+.newpage {
+  font-size: smaller;
+  color: #FF0000;
+}
+.botedit {
+  font-size: smaller;
+  color: #3CB371;
+}
+.unpatrolled {
+  font-size: smaller;
+}
+
+/* 대문에서 특정 요소 숨기기. 스킨 관계없이 공통으로. Monobook.css에서 가져옴 --[[사용자:Klutzy|klutzy]] ([[사용자토론:Klutzy|토론]]) 2009년 8월 9일 (일) 13:56 (KST) */
+body.page-위키백과_대문 #t-cite,
+body.page-위키백과_대문 #lastmod,
+body.page-위키백과_대문 #siteSub,
+body.page-위키백과_대문 #contentSub,
+body.page-위키백과_대문 h1.firstHeading {
+  display: none !important;
+}
+
+/* [[틀:누가]] 등의 정비 필요 문장에 밑줄을 표시하기. klutzy 2009년 9월 27일 (일) 19:45 (KST)
+   영어 위키백과와 동일한 상자로 변경. ykhwong 2015년 9월 6일 (일) 12:18 (KST) */
+.fix {
+  /* border-bottom: 1px dashed #AAA; */
+  background-color: #fff9f9; color: DarkSlateGray; border: 1px solid #ffdcdc;
+}
+
+/* iTurtle 2009년 11월 4일 (수) 21:30 (KST) */
+#EnWpMpBook { background-image: url(//upload.wikimedia.org/wikipedia/en/7/7e/MP-open-book.png); }
+#EnWpMpSearch { background: url(//upload.wikimedia.org/wikipedia/en/a/ae/MP-magnifying-glass.png) no-repeat top right; }
+#EnWpMpSearchInner { float: right; width: 20em; text-align: center; }
+#EnWpMpBook2 { background-image: url(//upload.wikimedia.org/wikipedia/commons/8/8e/MP-open-book2.png); }
+
+/* 지리 좌표 기본값. 이들이 어떻게 쓰이는지에 대해서는 [[틀:Coord/link]] 참고.
+   "geo", "longtitude", "latitude" 클래스는 Geo 마이크로포맷이 사용함.
+iTurtle 2009년 11월 28일 (토) 16:40 (KST)
+*/
+.geo-default, .geo-dms, .geo-dec  { display: inline; }
+.geo-nondefault, .geo-multi-punct { display: none; }
+.longitude, .latitude       { white-space: nowrap; }
+
+/* 미디어 자료 관련 */
+/* Vector.css에서 너무 작게 나오는 것 방지 PuzzletChung 2010년 1월 5일 (화) 13:48 (KST) */
+table.mw_metadata {
+  font-size: smaller;
+}
+
+/* 편집 요약, 이유의 모양 설정.
+ (기울임 대신 글자 크기 약간 작게 하여 구별) */
+.comment {
+  font-style: normal !important;
+  font-size: 9pt;
+}
+
+/* 최근 바뀜에서 문서 분량 변경에 색깔 넣기
+ (증가는 초록색 감소는 빨간색) */
+.mw-plusminus-pos {
+  color:green;
+}
+.mw-plusminus-neg {
+  color:red;
+}
+
+/* toccolours 클래스: 일부 틀의 디자인에 사용됨 */
+.toccolours {
+   border:1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   padding: 5px;
+   font-size: 95%;
+}
+
+/* [[파일:Example.jpg|thumb]] 프레임이 붙어 있는 그림의 배경을 하얀색으로 */
+div.thumb div a img {
+  background-color:#ffffff;
+}
+
+/* 넘겨주기 링크 */
+.allpagesredirect a,
+.watchlistredir a,
+.redirect-in-category a:link,
+.redirect-in-category a:visited {
+  color:#888888;
+}
+
+/* 준보호 문서 편집창 배경색. 주의 환기 */
+.mw-textarea-sprotected {
+  background: #FFFFDB;
+}
+
+/* gallery 사용시 섬네일 글자 크기 조정 */
+.gallerytext p {
+  font-size: 90%;
+}
+
+/* 최근 바뀜 등에서 태그를 눈에 띄게 표시 */
+.mw-tag-markers {
+  color: red;
+}
+
+/*
+[[위키백과:관리자_요청/2011년_10월]]. 둘러보기 틀에서 list를 사용하는 경우 목록을 가로로 보이게 하여 기존의 수동 목록에 비해 의미성/편의성이 높습니다.
+{{가로목록}}을 통해 사용.
+2013-02-28: 영어판 css 가져옴. ul 목록뿐 아니라 dt/dd도 지원. --klutzy
+*/
+/* Style for horizontal lists (separator following item).
+   @source mediawiki.org/wiki/Snippets/Horizontal_lists
+   @revision 7 (2015-11-12)
+   @author [[User:Edokter]]
+ */
+.hlist dl,
+.hlist ol,
+.hlist ul {
+    margin: 0;
+    padding: 0;
+}
+/* Display list items inline */
+.hlist dd,
+.hlist dt,
+.hlist li {
+    margin: 0;
+    display: inline;
+}
+/* Display nested lists inline */
+.hlist.inline,
+.hlist.inline dl,
+.hlist.inline ol,
+.hlist.inline ul,
+.hlist dl dl, .hlist dl ol, .hlist dl ul,
+.hlist ol dl, .hlist ol ol, .hlist ol ul,
+.hlist ul dl, .hlist ul ol, .hlist ul ul {
+    display: inline;
+}
+/* Hide empty list itmes */
+.hlist .mw-empty-li {
+    display: none;
+}
+/* Generate interpuncts */
+.hlist dt:after {
+    content: ": ";
+}
+.hlist dd:after,
+.hlist li:after {
+    content: " · ";
+    font-weight: bold;
+}
+.hlist dd:last-child:after,
+.hlist dt:last-child:after,
+.hlist li:last-child:after {
+    content: none;
+}
+/* Add parentheses around nested lists */
+.hlist dd dd:first-child:before, .hlist dd dt:first-child:before, .hlist dd li:first-child:before,
+.hlist dt dd:first-child:before, .hlist dt dt:first-child:before, .hlist dt li:first-child:before,
+.hlist li dd:first-child:before, .hlist li dt:first-child:before, .hlist li li:first-child:before {
+    content: " (";
+    font-weight: normal;
+}
+.hlist dd dd:last-child:after, .hlist dd dt:last-child:after, .hlist dd li:last-child:after,
+.hlist dt dd:last-child:after, .hlist dt dt:last-child:after, .hlist dt li:last-child:after,
+.hlist li dd:last-child:after, .hlist li dt:last-child:after, .hlist li li:last-child:after {
+    content: ") ";
+    font-weight: normal;
+}
+/* Put ordinals in front of ordered list items */
+.hlist ol {
+    counter-reset: listitem;
+}
+.hlist ol > li {
+    counter-increment: listitem;
+}
+.hlist ol > li:before {
+    content: " " counter(listitem) " ";
+    white-space: nowrap;
+}
+.hlist dd ol > li:first-child:before,
+.hlist dt ol > li:first-child:before,
+.hlist li ol > li:first-child:before {
+    content: " (" counter(listitem) " ";
+}
+
+/* Unbulleted lists */
+.plainlist ol,
+.plainlist ul {
+    line-height: inherit;
+    list-style: none none;
+    margin: 0;
+}
+.plainlist ol li,
+.plainlist ul li {
+    margin-bottom: 0;
+}
+
+/* 바벨
+   [[미디어위키토론:Common.css#바벨 상자 스타일 맞추기]]
+   바벨 확장 기능을 기존 바벨 상자 스타일에 맞추기 */
+.mw-babel-box-level-N  {
+        display: none;
+}
+ 
+div.mw-babel-box table th  {
+        font-family: sans-serif;
+        font-size:14pt;
+        text-align:center;
+        width:45px;
+        height:45px; 
+}
+ 
+div.mw-babel-box table td {
+        font-size:8pt;
+        padding:4pt;
+        line-height:1.25em;
+}
+ 
+div.mw-babel-box-N  {
+        float: left;
+        border:solid #6EF7A7 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-4  {
+        float:left;
+        border:solid #77E0E8 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-3  {
+        float:left;
+        border:solid #99B3FF 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-2  {
+        float:left;
+        border:solid #BCB9EF 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-1  {
+        float:left;
+        border:solid #E0C0E0 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-0  {
+        float:left;
+        border:solid #FFB3B3 1px;
+        margin:1px;
+}
+ 
+div.mw-babel-box-N table  {
+        background: #C5FCDC;
+}
+ 
+div.mw-babel-box-4 table {
+        background: #D0F8FF;
+}
+ 
+div.mw-babel-box-3 table  {
+        background: #E0E8FF;
+}
+ 
+div.mw-babel-box-2 table {
+        background: #E9E5F9;
+}
+ 
+div.mw-babel-box-1 table {
+        background: #F3E0F3;
+}
+ 
+div.mw-babel-box-0 table {
+        background: #FFE0E8;
+}
+ 
+div.mw-babel-box-N table th  {
+        background: #6EF7A7;
+}
+ 
+div.mw-babel-box-4 table th {
+        background: #77E0E8;
+}
+ 
+div.mw-babel-box-3 table th  {
+        background: #99B3FF;
+}
+ 
+div.mw-babel-box-2 table th {
+        background: #BCB9EF;
+}
+ 
+div.mw-babel-box-1 table th {
+        background: #E0C0E0;
+}
+ 
+div.mw-babel-box-0 table th {
+        background: #FFB3B3;
+}
+
+/* {{참고}}, {{본문}} 등의 틀에 쓰이는 class. */
+.rellink,
+.dablink {
+    /* font-style: italic; */ /* 영어 위키백과와 달리 이탤릭 사용하지 않음 */
+    font-size: 90%;           /* 한국어 위키백과에서는 대신 작은 글씨로 본문과 구분함 */
+    /* @noflip */
+    padding-left: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+/* wikitable 관련 스타일 정비. 영어 위키백과에서 가져옴. 2014-2-6 ChongDae */
+
+/* Normal font styling for table row headers with scope="row" tag */
+.wikitable.plainrowheaders th[scope=row] {
+    font-weight: normal;
+    /* @noflip */
+    text-align: left;
+}
+ 
+/* Lists in data cells are always left-aligned */
+.wikitable td ul,
+.wikitable td ol,
+.wikitable td dl {
+    /* @noflip */
+    text-align: left;
+}
+/* ...unless they also use the hlist class */
+.wikitable.hlist td ul,
+.wikitable.hlist td ol,
+.wikitable.hlist td dl {
+    text-align: inherit;
+}
+
+/* [[틀:보존문서 안내문2]]용 class. 2015-3-17 IRTC1015 */
+.archiveHeader2 {
+	clear: right;
+	float: right;
+	border: 1px solid #a7d7f9;
+	margin: 0 0 1.4em 0.5em;
+	padding: 0.5em;
+	border-spacing: 0;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius:0.5em; font-size:small;
+	background-color:#FFFFFF;
+}
+
+.archiveHeader2 .mw-ui-input-inline {
+    min-width: 0;
+    width: 12em;
+}
+
+/* 정렬 가능한 표용 정렬 키: [[틀:이름정렬]] 등 참조 */
+td .sortkey,
+th .sortkey {
+    display: none;
+    speak: none;
+}
+
+/* 원 도표: Transparent borders */
+.transborder {
+    border: solid transparent;
+}
+* html .transborder {  /* IE6 */
+    border: solid #000001;
+    filter: chroma(color=#000001);
+}
+
+/* 포털 관련 css 추가 2015-11-06 ChongDae */
+/* For portals, added 2011-12-07 -bv
+   On wide screens, show these as two columns
+   On narrow and mobile screens, let them collapse into a single column */
+.portal-column-left {
+    float: left;
+    width: 50%;
+}
+.portal-column-right {
+    float: right;
+    width: 49%;
+}
+.portal-column-left-wide {
+    float: left;
+    width: 60%;
+}
+.portal-column-right-narrow {
+    float: right;
+    width: 39%;
+}
+.portal-column-left-extra-wide {
+    float: left;
+    width: 70%;
+}
+.portal-column-right-extra-narrow {
+    float: right;
+    width: 29%;
+}
+@media only screen and (max-width: 800px) {
+    /* Decouple the columns on narrow screens */
+    .portal-column-left,
+    .portal-column-right,
+    .portal-column-left-wide,
+    .portal-column-right-narrow,
+    .portal-column-left-extra-wide,
+    .portal-column-right-extra-narrow {
+        float: inherit;
+        width: inherit;
+    }
+}
