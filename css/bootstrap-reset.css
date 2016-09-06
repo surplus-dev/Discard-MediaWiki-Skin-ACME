@@ -888,3 +888,7 @@ iframe {
 div#mw-anon-edit-warning {
     display: block;
 }
+.comments-body form p {
+    display: block;
+    margin-top: 30px;
+}
