@@ -882,3 +882,9 @@ iframe {
 #sitenotice li {
     margin-left: 20px;
 }
+.errorbox {
+    display: block;
+}
+div#mw-anon-edit-warning {
+    display: block;
+}
