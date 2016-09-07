@@ -136,6 +136,7 @@ class KiwiticTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?>키위위키 이슈 트래커</a></li>
 			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?>키위위키 서버 상태</a></li>
 			<li id="t-re"><?php echo '<a href="//twicewiki.net">';?>트둥백과</a></li>
+			<li id="t-re"><?php echo '<a href="//buswiki.ml">';?>버스위키</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
