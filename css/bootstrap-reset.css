@@ -892,3 +892,6 @@ div#mw-anon-edit-warning {
     display: block;
     margin-top: 30px;
 }
+table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible tbody tr th {
+    border-left: 1px solid #aaa;
+}
