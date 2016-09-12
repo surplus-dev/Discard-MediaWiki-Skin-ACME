@@ -855,3 +855,6 @@ div#mw-anon-edit-warning {
 table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible tbody tr th {
 	border-left: 1px solid #aaa;
 }
+table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible {
+	border-left: 0px;
+}
