@@ -153,8 +153,7 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<i class="fa fa-sign-in" aria-hidden="true"></i>
- <span id="mobile">로그인</span>' ); ?>
+				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i></a>'?>
 				</li>
 				
 				<?php } ?>
