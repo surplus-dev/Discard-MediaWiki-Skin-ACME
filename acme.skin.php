@@ -95,16 +95,14 @@ class AcmeTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-						<?php
-							foreach( $theData as $key => $item ) {
-								if (preg_match('/specialpages|whatlinkshere/', $key)) {
-									continue;
-								}
-								echo $this->makeListItem( $key, $item );
-							}
-						?>
+<li id="t-re"><a href="/wiki/특수:필요한문서">작성 필요</a></li>
+<li id="t-re"><a href="/wiki/특수:짧은문서">짧은 문서</a></li>
+<li id="t-re"><a href="/wiki/위키:도움말">도움말</a></li>
+<li id="t-re"><a href="/wiki/위키:라이선스">저작권</a></li>
+<li id="t-re"><a href="/wiki/위키:사랑방">사랑방</a></li>						
+<li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u">파일 올리기</a></li>
 						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
-						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수문서', array( 'title' => '특수문서' ) ); ?></li>
+						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 						
 						</ul>
 				</li>
@@ -143,7 +141,7 @@ class AcmeTemplate extends BaseTemplate {
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
-						<li id="pt-logout"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'logout', null ), '로그아웃', array( 'title' => '위키에서 로그아웃 합니다.' ) ); ?></li>
+						<li id="pt-logout"><?php echo '<a href="/w/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'">로그아웃</a>'; ?></li>
 					</ul>
 				</li>
 				
@@ -153,8 +151,8 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Userlogin' ), '<i class="fa fa-sign-in" aria-hidden="true"></i>
- <span id="mobile">로그인</span>' ); ?>
+				<?php echo '<a href="/w/index.php?title=특수:로그인&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i>
+ <span id="mobile">로그인</span></a>'; ?>
 				</li>
 				
 				<?php } ?>
