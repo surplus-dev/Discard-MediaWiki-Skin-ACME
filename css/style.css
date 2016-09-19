@@ -126,11 +126,13 @@ ul.dropdown-menu { border: none }
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+	border-radius: 3px;
 }
 .head-section .nav li .dropdown-menu li a {
-    line-height: 30px;
+    line-height: 25px;
     padding: 3px 12px;
-    border-bottom: 1px solid #F3E8E8;
+    border-bottom: none;
 }
 /*search*/
 .search {
@@ -793,7 +795,7 @@ ul.about-flex-slides { margin-left: 0 }
 .breadcrumbs {
     background: #9CE159;
     color: #fff;
-    padding: 10px 0;
+    padding: 25px 0;
     margin-bottom: 40px;
 }
 .breadcrumb {
