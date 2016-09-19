@@ -306,23 +306,9 @@ ul {
 			color:#666;background-color:#eee;text-decoration:none;
 		}
 
-@font-face {
-  font-family: 'Nanum Gothic';
-  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nanum Gothic Coding';
-  src: url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.eot) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/nanumgothiccoding/v4/NanumGothicCoding-Regular.ttf) format('truetype');
-}
 
-label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: 'Nanum Gothic', 'sans-serif'; }
-div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: '니눔고딕코딩', 'Nanum Gothic Coding', 'monospace'; }
+label, span, body, strong, b, div, h1, h2, h3, h4, h5, h6, h7, input { font-family: helvetica, "Noto Sans Japanese", 나눔고딕, "맑은 고딕", "Nanum Gothic", sans-serif; }
+div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pre.source-css, pre.source-javascript, pre { font-family: 'monospace'; }
 
 .mw-content-ltr .toc ul, .mw-content-ltr #toc ul, .mw-content-rtl .mw-content-ltr .toc ul, .mw-content-rtl .mw-content-ltr #toc ul {
     list-style-type: none;
@@ -333,10 +319,10 @@ html {
 }
 #toc {
     display: table;
-    border: 1px solid rgb(204,204,204);
+    border: none;
     padding: 20px 20px 20px;
     text-align: center;
-    background-color: white;
+    background-color: #f9f9f9;
     max-width: 100%;
     margin-bottom: 10px;
 }
@@ -428,6 +414,13 @@ table {
     margin-top: 15px;
 }
 }
+@media (max-width: 991px){
+@media (min-width: 768px){
+#mobile {
+    display: none;
+}
+}
+}
 @media (min-width: 768px){
 	#searchInput {
     width: 180px;
@@ -499,10 +492,6 @@ table.wikitable {
 }
 #catlinks {
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-}
-#toc {
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-	border-radius: 3px;
 }
 div.scroll-buttons a {
     display: inline-block;
@@ -659,13 +648,6 @@ ins#noadsense {
 }
 #mw-content-text ul li ul {
     margin-bottom: 5px;
-}
-blockquote {
-    font-size: 16px;
-    border: solid 1px #aaa;
-    background: #f9f9f9;
-    border-left: solid 5px #2c3e50;
-    border-radius: 3px;
 }
 .copyright p a {
     color: #48cfad;
@@ -831,7 +813,6 @@ textarea#comment {
 }
 blockquote {
     margin: 10px 0 10px;
-	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .mw-redirectedfrom {
     display: block;
@@ -900,4 +881,48 @@ table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible {
 }
 .comment {
     word-break: break-all;
+}
+input#searchInput {
+    border: none;
+    border-bottom: 2px solid #eee;
+    box-shadow: none;
+    border-radius: 0px;
+}
+input#searchInput:focus {
+    border-bottom: 2px solid #2c3e50;
+}
+form.mw-ui-vform.mw-ui-container.visualClear {
+    margin: auto;
+}
+.c-item {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #f9f9f9;
+}
+textarea#comment {
+    border: solid 1px #aaa;
+    background: #f9f9f9;
+    border-radius: 3px;
+    margin-top: -30px;
+    padding: 10px;
+}
+.c-form-button {
+    margin-top: -15px;
+}
+.c-form-title {
+    font-weight: normal;
+    font-size: 26px;
+}
+.comments-body form {
+    margin-top: -25px;
+}
+#spy p {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+a.external.text::before {
+    content: "\f08b";
+    color: #008000;
+    background-color: #FFF;
+    font-family: FontAwesome;
 }
