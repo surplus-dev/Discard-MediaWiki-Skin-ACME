@@ -926,3 +926,36 @@ a.external.text::before {
     background-color: #FFF;
     font-family: FontAwesome;
 }
+.infobox {
+    border: 1px solid #aaa;
+    background: #f9f9f9;
+    border-collapse: collapse;
+float: right;
+}
+.infobox caption {
+    border: 1px solid #aaa;
+    padding: 5px;
+    background: #f9f9f9;
+    border-bottom: none;
+}
+.infobox tbody tr {
+    border: 1px solid #aaa;
+}
+.infobox tbody tr th {
+    padding: 5px;
+}
+.infobox tbody tr td {
+    padding: 5px;
+}
+.external.free {
+    color: green;
+}
+.external.free:hover, .external.free:focus {
+    color: #015301;
+}
+a.external.free::before {
+content: "\f08b";
+color: #008000;
+background-color: #FFF;
+font-family: FontAwesome;
+}
