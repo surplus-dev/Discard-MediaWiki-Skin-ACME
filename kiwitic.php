@@ -26,7 +26,6 @@ $wgResourceModules['skins.kiwitic'] = array(
 		$skinDir . '/css/bootstrap-reset.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
-		$skinDir . '/css/librewiki.css'            => array( 'media' => 'all' ),
 	),
 	'scripts' => array(
 		$skinDir . '/js/jquery.min.js',
