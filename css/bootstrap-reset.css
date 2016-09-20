@@ -931,6 +931,7 @@ a.external.text::before {
     background: #f9f9f9;
     border-collapse: collapse;
 float: right;
+margin-bottom: 10px;
 }
 .infobox caption {
     border: 1px solid #aaa;
