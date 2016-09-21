@@ -85,7 +85,7 @@ class AcmeTemplate extends BaseTemplate {
 						<input type="hidden" name="title" value="특수:검색">
 					</form>				
 				</li>
-				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">최근 바뀐 문서<span>'); ?></li>
+				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'RecentChanges', null ), '<i class="fa fa-refresh" aria-hidden="true"></i>  <span id="mobile">바뀐 문서<span>'); ?></li>
 				
 				<li><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Random', null ), '<i class="fa fa-random" aria-hidden="true"></i> <span id="mobile">랜덤</span>'); ?></li>
 				<?php $theMsg = 'toolbox';
@@ -95,14 +95,14 @@ class AcmeTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-<li id="t-re"><a href="/wiki/특수:필요한문서">작성 필요</a></li>
-<li id="t-re"><a href="/wiki/특수:짧은문서">짧은 문서</a></li>
-<li id="t-re"><a href="/wiki/위키:도움말">도움말</a></li>
-<li id="t-re"><a href="/wiki/위키:라이선스">저작권</a></li>
-<li id="t-re"><a href="/wiki/위키:사랑방">사랑방</a></li>						
-<li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u">파일 올리기</a></li>
-						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?>역링크</a></li>
-						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
+<li id="t-re"><a href="/wiki/특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
+<li id="t-re"><a href="/wiki/특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
+<li id="t-re"><a href="/wiki/위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
+<li id="t-re"><a href="/wiki/위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>
+<li id="t-re"><a href="/wiki/위키:사랑방"><i class="fa fa-comment" aria-hidden="true"></i> 사랑방</a></li>						
+<li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
+						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
+						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 						
 						</ul>
 				</li>

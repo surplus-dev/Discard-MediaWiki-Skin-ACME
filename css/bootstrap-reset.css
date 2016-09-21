@@ -315,7 +315,7 @@ div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pr
     list-style-image: none;
 }
 html {
-    background-color: #2c3e50;
+    background-color: #8E8295;
 }
 #toc {
     display: table;
@@ -343,7 +343,7 @@ a.new:hover, a.new:focus {
 #mw-normal-catlinks {
     border: 1px solid rgb(204, 204, 204);
     padding: 5px;
-	border-radius: 3px;
+	
 }
 p {
     word-break: break-all;
@@ -472,7 +472,7 @@ button {
 }
 input {
     border: 1px solid #aaaaaa;
-    border-radius: 3px;
+    
     padding: 5px 10px 5px 10px;
     background: white;
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
@@ -650,7 +650,7 @@ ins#noadsense {
     margin-bottom: 5px;
 }
 .copyright p a {
-    color: #48cfad;
+    color: #16ef9b;
 }
 /* Drawer css start */
 .mode-drawer #reference-drawer {
@@ -854,7 +854,7 @@ iframe {
     margin-bottom: 40px;
     padding: 10px;
     border: #aaa 1px solid;
-    border-radius: 3px;
+    
     margin-top: -30px;
     background-color: #f9f9f9;
     padding-bottom: 0px;
@@ -889,20 +889,20 @@ input#searchInput {
     border-radius: 0px;
 }
 input#searchInput:focus {
-    border-bottom: 2px solid #2c3e50;
+    border-bottom: 2px solid #8E8295;
 }
 form.mw-ui-vform.mw-ui-container.visualClear {
     margin: auto;
 }
 .c-item {
     border: 1px solid #aaa;
-    border-radius: 3px;
+    
     background: #f9f9f9;
 }
 textarea#comment {
     border: solid 1px #aaa;
     background: #f9f9f9;
-    border-radius: 3px;
+    
     margin-top: -30px;
     padding: 10px;
 }
@@ -932,18 +932,21 @@ a.external.text::before {
     border-collapse: collapse;
 float: right;
 margin-bottom: 10px;
+box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .infobox caption {
     border: 1px solid #aaa;
     padding: 5px;
     background: #f9f9f9;
     border-bottom: none;
+box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .infobox tbody tr {
     border: 1px solid #aaa;
 }
 .infobox tbody tr th {
     padding: 5px;
+border-right: 1px solid #aaa;
 }
 .infobox tbody tr td {
     padding: 5px;

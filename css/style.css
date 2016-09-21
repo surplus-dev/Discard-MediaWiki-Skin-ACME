@@ -793,7 +793,7 @@ ul.about-flex-slides { margin-left: 0 }
     width: 15px;
 }
 .breadcrumbs {
-         background:#2c3e50;
+         background:#8E8295;
     color: #fff;
     padding: 25px 0;
     margin-bottom: 40px;
@@ -802,7 +802,7 @@ ul.about-flex-slides { margin-left: 0 }
     margin-bottom: 0;
     background: none;
 }
-.breadcrumb li a { color: #48cfad }
+.breadcrumb li a { color: #16ef9b }
 .breadcrumb li.active { color: #fff }
 .breadcrumbs h1 {
     font-size: 24px;
@@ -1209,7 +1209,7 @@ ul.tag li a {
 }
 /*footer*/
 .footer {
-    background: #34495e;
+    background: #8E8295;
     color: #fff;
     padding: 50px 0;
     display: inline-block;
@@ -1305,7 +1305,7 @@ ul.page-footer-list li {
 ul.page-footer-list a { color: #fff }
 ul.page-footer-list li i { padding-right: 10px }
 .footer-small {
-    background-color: #2C3E50;
+    background-color: #8E8295;
     margin-top: 30px;
     padding-top: 5px;
 }
