@@ -912,10 +912,10 @@ a.external.text::before {
 	color: #015301;
 }
 a.external.free::before {
-content: "\f08b";
-color: #008000;
-background-color: #FFF;
-font-family: FontAwesome;
+	content: "\f08b";
+	color: #008000;
+	background-color: #FFF;
+	font-family: FontAwesome;
 }
 .plainlinks a.external::before {
 	content: "";
