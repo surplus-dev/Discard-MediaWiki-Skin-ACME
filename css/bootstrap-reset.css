@@ -343,7 +343,6 @@ a.new:hover, a.new:focus {
 #mw-normal-catlinks {
 	border: 1px solid rgb(204, 204, 204);
 	padding: 5px;
-	border-radius: 3px;
 }
 p {
 	word-break: break-all;
@@ -472,7 +471,6 @@ button {
 }
 input {
 	border: 1px solid #aaaaaa;
-	border-radius: 3px;
 	padding: 5px 10px 5px 10px;
 	background: white;
 	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
@@ -818,7 +816,6 @@ div#msupload-bottom {
 	margin-bottom: 40px;
 	padding: 10px;
 	border: #aaa 1px solid;
-	border-radius: 3px;
 	margin-top: -30px;
 	background-color: #f9f9f9;
 	padding-bottom: 0px;
@@ -853,13 +850,11 @@ form.mw-ui-vform.mw-ui-container.visualClear {
 }
 .c-item {
 	border: 1px solid #aaa;
-	border-radius: 3px;
 	background: #f9f9f9;
 }
 textarea#comment {
 	border: solid 1px #aaa;
 	background: #f9f9f9;
-	border-radius: 3px;
 	margin-top: -30px;
 	padding: 10px;
 }
@@ -889,18 +884,21 @@ a.external.text::before {
 	border-collapse: collapse;
 	float: right;
 	margin-bottom: 10px;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .infobox caption {
 	border: 1px solid #aaa;
 	padding: 5px;
 	background: #f9f9f9;
 	border-bottom: none;
+	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
 .infobox tbody tr {
 	border: 1px solid #aaa;
 }
 .infobox tbody tr th {
 	padding: 5px;
+	border-right: 1px solid #aaa;
 }
 .infobox tbody tr td {
 	padding: 5px;
