@@ -168,7 +168,7 @@ class KiwiticTemplate extends BaseTemplate {
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
 						<li id="pt-notifications"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Notifications', null ), '알림', array( 'title' => '알림 페이지로 이동합니다.' ) ); ?></li>
-						<li id="pt-logout"><?php echo '<a href="/w/index.php?title=Special:Logout&returnto='.$_URITITLE.'">로그아웃</a>'?></li>
+						<li id="pt-logout"><?php echo '<a href="/index.php?title=Special:Logout&returnto='.$_URITITLE.'">로그아웃</a>'?></li>
 					</ul>
 				</li>
 				
@@ -178,7 +178,7 @@ class KiwiticTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo '<a href="/w/index.php?title=Special:Login&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i><span id="mobile">로그인</span></a>'?>
+				<?php echo '<a href="/index.php?title=Special:Login&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i><span id="mobile">로그인</span></a>'?>
 				</li>
 				
 				<?php } ?>
