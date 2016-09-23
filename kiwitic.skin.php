@@ -116,13 +116,13 @@ class KiwiticTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-			<li id="t-re"><?php echo '<a href="//mirror.kiwki.us">';?>키위미러</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?>키위위키 트위터</a></li>
-			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?>키위위키 게시판</a></li>
-			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?>키위위키 이슈 트래커</a></li>
-			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?>키위위키 서버 상태</a></li>
-			<li id="t-re"><?php echo '<a href="//buswiki.ml">';?>버스위키</a></li>
-			<li id="t-re"><?php echo '<a href="//wsilog.ml">';?>대한위키실록</a></li>
+			<li id="t-re"><?php echo '<a href="//mirror.kiwki.us">';?><i class="fa fa-external-link" aria-hidden="true"></i> 키위미러</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?><i class="fa fa-twitter" aria-hidden="true"></i> 키위위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?><i class="fa fa-external-link" aria-hidden="true"></i> 키위위키 게시판</a></li>
+			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?><i class="fa fa-bug aria-hidden="true"></i> 키위위키 이슈 트래커</a></li>
+			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?><i class="fa fa-check" aria-hidden="true"></i>  키위위키 서버 상태</a></li>
+			<li id="t-re"><?php echo '<a href="//buswiki.ml">';?><i class="fa fa-user-plus" aria-hidden="true"></i> 버스위키</a></li>
+			<li id="t-re"><?php echo '<a href="//wsilog.ml">';?><i class="fa fa-user-plus" aria-hidden="true"></i> 대한위키실록</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
