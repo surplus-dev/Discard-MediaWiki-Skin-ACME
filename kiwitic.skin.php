@@ -118,6 +118,7 @@ class KiwiticTemplate extends BaseTemplate {
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//mirror.kiwki.us">';?><i class="fa fa-external-link" aria-hidden="true"></i> 키위미러</a></li>
 			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?><i class="fa fa-twitter" aria-hidden="true"></i> 키위위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/kiwi_dev_">';?><i class="fa fa-twitter" aria-hidden="true"></i> 키위위키 개발노트</a></li>
 			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?><i class="fa fa-external-link" aria-hidden="true"></i> 키위위키 게시판</a></li>
 			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?><i class="fa fa-bug aria-hidden="true"></i> 키위위키 이슈 트래커</a></li>
 			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?><i class="fa fa-check" aria-hidden="true"></i>  키위위키 서버 상태</a></li>
