@@ -123,7 +123,7 @@ class KiwiticTemplate extends BaseTemplate {
 			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?><i class="fa fa-bug aria-hidden="true"></i> 키위위키 이슈 트래커</a></li>
 			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?><i class="fa fa-check" aria-hidden="true"></i>  키위위키 서버 상태</a></li>
 			<li id="t-re"><?php echo '<a href="//buswiki.ml">';?><i class="fa fa-user-plus" aria-hidden="true"></i> 버스위키</a></li>
-			<li id="t-re"><?php echo '<a href="//wsilog.ml">';?><i class="fa fa-user-plus" aria-hidden="true"></i> 대한위키실록</a></li>
+			<li id="t-re"><?php echo '<a href="//wsilog.xyz">';?><i class="fa fa-user-plus" aria-hidden="true"></i> 대한위키실록</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
