@@ -219,6 +219,9 @@ class KiwiticTemplate extends BaseTemplate {
 	<!--상단 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
 	<!--상단 광고 끝 -->
+	<?php if (preg_match("/&action=history/", $_SERVER["REQUEST_URI"])) {
+		echo '<table id="history" class="wikitable" style="width:100%;background: transparent none repeat scroll 0% 0%;padding:5px;width: 100%;border:2px solid;border-color:#00b5ff;"><tr><td><div style="padding:5px;background-color: transparent;border:none;"><center><big style="color:#00b5ff;">2015년 6월 15일 이전의 기여는 게임위키에서의 기여입니다.</big></center></div></td></tr></table>';
+	} ?>
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
 	echo '<br>';
