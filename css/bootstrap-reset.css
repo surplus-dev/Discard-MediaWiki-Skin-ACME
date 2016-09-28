@@ -431,7 +431,7 @@ table {
 }
 }
 #mw-content-text {
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 div.scroll-buttons {
     position: fixed;
