@@ -97,9 +97,6 @@ ul.dropdown-menu { border: none }
 .head-section  .navbar-nav > li > a {
     padding-bottom: 5px;
     padding-top: 5px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     margin-left: 2px;
     line-height: 30px;
     -webkit-transition: all .3s ease;
@@ -123,11 +120,7 @@ ul.dropdown-menu { border: none }
 .dropdown-menu { box-shadow: none }
 .head-section .nav li .dropdown-menu {
     padding: 0;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
 	box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-	border-radius: 3px;
 }
 .head-section .nav li .dropdown-menu li a {
     line-height: 25px;
