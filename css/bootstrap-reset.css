@@ -315,7 +315,7 @@ div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pr
     list-style-image: none;
 }
 html {
-    background-color: #8E8295;
+    background-color: orange;
 }
 #toc {
     display: table;
@@ -399,6 +399,7 @@ p {
 @media (max-width: 767px){
 .head-section .nav li .dropdown-menu {
 	margin-top: 0px;
+margin-bottom: 10px;
 }
 }
 @media (max-width: 767px){
@@ -429,6 +430,9 @@ table {
     float: right;
 }
 }
+#mw-content-text {
+    overflow-x: scroll;
+}
 div.scroll-buttons {
     position: fixed;
     float: right;
@@ -449,7 +453,6 @@ div.scroll-buttons {
     margin-left: 0.5em;
 }
 div.scroll-buttons a.random-link {
-    border-radius: 0.4em 0 0 0;
     border-left: 1px solid #545454;
 }
 button {
@@ -532,26 +535,23 @@ div.scroll-buttons a.scroll-button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-div.scroll-buttons a.scroll-bottom {
-    border-radius: 0 0.4em 0 0;
-}
 .mw-redirectedfrom a {
-    color: #48cfad;
+    color: #2ed896;
 }
 .mw-redirectedfrom a:hover {
-    color: #48cfad;
+    color: #2ed896;
 }
 .subpages a {
-    color: #48cfad;
+    color: #2ed896;
 }
 .subpages a:hover {
-    color: #48cfad;
+    color: #2ed896;
 }
 .col-lg-4.col-sm-4 a.new {
-    color: red;
+    color: white;
 }
 .col-lg-4.col-sm-4 a {
-    color: #48cfad;
+    color: #373A3C;
 }
 .mw-specialpages-notes ul li {
     margin-left: -0px;
@@ -589,7 +589,7 @@ div.scroll-buttons a.scroll-bottom {
     padding: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 16.66%;
+    width: 16.6666666%;
     text-align: center;
     background-color: #f9f9f9;
     border: 1px solid #aaa;
@@ -650,7 +650,16 @@ ins#noadsense {
     margin-bottom: 5px;
 }
 .copyright p a {
-    color: #16ef9b;
+    color: green;
+}
+.copyright p a:hover, .copyright p a:focus {
+    color: #015301;
+}
+.copyright p a::before {
+    content: "\f08b";
+color: #008000;
+background-color: transparent;
+font-family: FontAwesome;
 }
 /* Drawer css start */
 .mode-drawer #reference-drawer {
@@ -869,19 +878,6 @@ iframe {
 div#mw-anon-edit-warning {
     display: block;
 }
-.comments-body form p {
-    display: block;
-    margin-top: 30px;
-}
-table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible tbody tr th {
-    border-left: 1px solid #aaa;
-}
-table.wikitable.intro.mw-interwikitable.mw-interwiki-legend.mw-collapsible {
-    border-left: 0px;
-}
-.comment {
-    word-break: break-all;
-}
 input#searchInput {
     border: none;
     border-bottom: 2px solid #eee;
@@ -889,36 +885,10 @@ input#searchInput {
     border-radius: 0px;
 }
 input#searchInput:focus {
-    border-bottom: 2px solid #8E8295;
+    border-bottom: 2px solid orange;
 }
 form.mw-ui-vform.mw-ui-container.visualClear {
     margin: auto;
-}
-.c-item {
-    border: 1px solid #aaa;
-    
-    background: #f9f9f9;
-}
-textarea#comment {
-    border: solid 1px #aaa;
-    background: #f9f9f9;
-    
-    margin-top: -30px;
-    padding: 10px;
-}
-.c-form-button {
-    margin-top: -15px;
-}
-.c-form-title {
-    font-weight: normal;
-    font-size: 26px;
-}
-.comments-body form {
-    margin-top: -25px;
-}
-#spy p {
-    margin-top: -15px;
-    margin-bottom: 15px;
 }
 a.external.text::before {
     content: "\f08b";
@@ -950,6 +920,7 @@ border-right: 1px solid #aaa;
 }
 .infobox tbody tr td {
     padding: 5px;
+border-color: #aaa;
 }
 .external.free {
     color: green;
@@ -965,4 +936,27 @@ font-family: FontAwesome;
 }
 .plainlinks a.external::before {
     content: "";
+}
+.fa {
+    margin-right: 3px;
+}
+.mw-input-with-label {
+    display: block;
+}
+#wpDestFile {
+    width: 100%;
+}
+#wpUploadDescription {
+    width: 100%;
+    border: 1px solid #aaa;
+    padding: 5px 10px 5px 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
+}
+.mw-autocomplete-user {
+    margin-top: 10px;
+}
+#mw-log-page {
+    display: block;
+width: 250px;
 }

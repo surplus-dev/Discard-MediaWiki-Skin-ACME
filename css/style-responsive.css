@@ -38,7 +38,7 @@
     }
 
     .head-section .nav li .dropdown-menu li a:hover, .head-section .nav li .dropdown-menu li.active a {
-        color: #fff !important;
+        color: #FFA500 !important;
     }
 
     .purchase-btn, .about-testimonial {
@@ -115,7 +115,7 @@
     }
 
     .head-section .nav li .dropdown-menu li a:hover {
-        color: #48C9B0 !important;
+        color: orange;
     }
 
     .navbar-brand {

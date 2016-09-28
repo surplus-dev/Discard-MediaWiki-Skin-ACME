@@ -25,9 +25,9 @@ class SkinAcme extends SkinTemplate {
 		$out->addMeta('twitter:creator', '@wikicocoa');
 		$out->addMeta('twitter:image', 'https://wsilog.xyz/wsilog.png');
 //		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#34495E');
+		$out->addMeta('theme-color', 'orange');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#34495E'); 
+		$out->addMeta('msapplication-navbutton-color', 'orange'); 
 	}//end initPage
 
 	/**
@@ -92,14 +92,13 @@ class AcmeTemplate extends BaseTemplate {
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-<li id="t-re"><a href="/wiki/특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
-<li id="t-re"><a href="/wiki/특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
-<li id="t-re"><a href="/wiki/위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
-<li id="t-re"><a href="/wiki/위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>
-<li id="t-re"><a href="/wiki/위키:사랑방"><i class="fa fa-comment" aria-hidden="true"></i> 사랑방</a></li>						
+<li id="t-bell"><a href="/wiki/특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
+<li id="t-puzzle"><a href="/wiki/특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
+<li id="t-book"><a href="/wiki/위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
+<li id="t-gavel"><a href="/wiki/위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>					
 <li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
 						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
@@ -108,10 +107,11 @@ class AcmeTemplate extends BaseTemplate {
 				</li>
 <li class="dropdown">
 <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 링크</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 링크</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-						<li id="t-kiwi"><a href='https://kiwki.us/'>키위위키</a></li>						
+						<li id="t-kiwi"><a href='https://kiwki.us/'><i class="fa fa-user-plus" aria-hidden="true"></i> 키위위키</a></li>
+<li id="t-bbs"><a href='https://wsilog.xyz/bbs'><i class="fa fa-comment" aria-hidden="true"></i> 위키 게시판</a></li>						
 						</ul>
 				</li>
 				
@@ -120,28 +120,19 @@ class AcmeTemplate extends BaseTemplate {
 				function loginBox() {
 					global $wgUser, $wgRequest;
 				}
-				
-					if ($wgUser->isLoggedIn()) {
-							if ($wgUser->getEmailAuthenticationTimestamp()) {
 							$email = trim($wgUser->getEmail());
 							$email = strtolower($email);
 							$email = md5($email) . "?d=identicon";
-						}
-						else {
-							$result = mt_rand(1, 10000);
-							$email = $result."?d=identicon&f=y";
-						}
-					}	
 				?>
 				
 				<li class="dropdown">
-				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo'<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ; ?></a>
+				<a href="javascript:void(0);" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo'<img style="width: 32px;" class="profile-img" src="https://secure.gravatar.com/avatar/'.$email.'" /></a>' ; ?></a>
 					<ul class="dropdown-menu">
-						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), $wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
-						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '환경설정', array( 'title' => '환경설정을 불러옵니다.' ) ); ?></li>
-						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
-						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
-						<li id="pt-logout"><?php echo '<a href="/w/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'">로그아웃</a>'; ?></li>
+						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ), '<i class="fa fa-user" aria-hidden="true"></i>  '.$wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
+						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '<i class="fa fa-cog" aria-hidden="true"></i>  환경 설정', array( 'title' => '환경 설정을 불러옵니다.' ) ); ?></li>
+						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '<i class="fa fa-bookmark" aria-hidden="true"></i>  주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
+						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
+						<li id="pt-logout"><?php echo '<a href="/w/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?></li>
 					</ul>
 				</li>
 				
@@ -193,17 +184,18 @@ class AcmeTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 <?php if ( $this->data['sitenotice'] && $_COOKIE['alertcheck'] != "yes" ) { ?>
-                        <div id="sitenotice">
-                            <?php $this->html( 'sitenotice' ) ?>
-                        </div>
+                        <div id="sitenotice"><div style="margin-bottom: 10px;">공지<span style="float:right;"><div id="folding_2" style="display:block;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">펼치기</a>]</div><div id="folding_3" style="display:none;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">접기</a>]</div></a></span><div id="folding_1" style="display:none;"><br><?php $this->html( 'sitenotice' ) ?></div></div></div>
 <?php } ?>
 	<!-- 광고 -->
 	<ins id="noadsense" class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9592402831871199" data-ad-slot="7142234264" data-ad-format="auto"></ins><br>
 	<!-- 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
-        echo '<br>';
-    } ?>
+    }
+if (preg_match("/&action=history/", $_SERVER["REQUEST_URI"])) {
+    echo '<table id="history" class="wikitable" style="width:100%;background: transparent none repeat scroll 0% 0%;padding:5px;width: 100%;border:2px solid;border-color:#00b5ff;"><tbody><tr><td><div  style="padding:5px;background-color: transparent;border:none;"><center><big style="color:#00b5ff;">2016년 9월 5일 이전 기여는 위키올 시절의 기여 입니다.</big></div></td></tr></tbody></table>';
+}
+else {  echo '<br>'; } ?>
 	<?php $this->html( 'bodytext' );
 	if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
