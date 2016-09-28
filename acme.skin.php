@@ -196,8 +196,8 @@ if (preg_match("/&action=history/", $_SERVER["REQUEST_URI"])) {
     echo '<table id="history" class="wikitable" style="width:100%;background: transparent none repeat scroll 0% 0%;padding:5px;width: 100%;border:2px solid;border-color:#00b5ff;"><tbody><tr><td><div  style="padding:5px;background-color: transparent;border:none;"><center><big style="color:#00b5ff;">2016년 9월 5일 이전 기여는 위키올 시절의 기여 입니다.</big></div></td></tr></tbody></table>';
 }
 else {  echo '<br>'; } ?>
-	<?php $this->html( 'bodytext' );
-	if ( $this->data['dataAfterContent'] ): ?>
+	<?php $this->html( 'bodytext' ); 
+if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
 				<?php $this->html( 'dataAfterContent' ); ?>

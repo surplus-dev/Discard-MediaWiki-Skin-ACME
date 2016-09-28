@@ -410,6 +410,14 @@ margin-bottom: 10px;
 table {
     min-width: 100%;
 }
+table.wikitable {
+overflow-x: auto;
+display: block;
+border:none;
+}
+#box table {
+    display: table;
+}
 }
 #searchform {
     margin-top: 15px;
@@ -429,9 +437,6 @@ table {
 #right-search {
     float: right;
 }
-}
-#mw-content-text {
-    overflow-x: auto;
 }
 div.scroll-buttons {
     position: fixed;
@@ -774,45 +779,6 @@ font-family: FontAwesome;
 #external_nico_0 {
     max-width: 100%;
 }
-.c-order-select form {
-    display: none;
-}
-.c-score {
-    display: none;
-}
-.c-item {
-    width: 100%;
-}
-textarea#comment {
-    width: 100%;
-}
-.c-container {
-    margin: 0px 0px 0px 0px;
-}
-.f-message {
-    width: 100%;
-}
-.c-avatar {
-    display: none;
-}
-.c-item {
-    padding: 10px;
-}
-.c-order {
-    padding: 0px 0px;
-}
-#allcomments {
-    margin-top: -40px;
-}
-.c-actions {
-    margin: 5px 0px 0px 0px;
-}
-.c-actions p {
-    margin: 0;
-}
-.reply {
-    margin-left: 0px !important;
-}
 .mw-highlight.mw-content-ltr pre br {
     display: none;
 }
@@ -839,26 +805,6 @@ iframe {
 #searchInput {
     box-shadow: 0 2px 5px rgba(50,50,50,0.1);
 }
-#spy p a {
-    border: 1px solid #aaaaaa;
-    border-radius: 0.25rem;
-    padding: 5px 10px 5px 10px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(50,50,50,0.1);
-    font-size: 14px;
-    color: black;
-    margin-left: -10px;
-}
-#spy p a:hover {
-    text-decoration: none;
-}
-.comments-block-user {
-    display: inline-flex;
-}
-#spy p a:focus {
-    text-decoration: none;
-}
-
 #sitenotice {
     margin-bottom: 40px;
     padding: 10px;
