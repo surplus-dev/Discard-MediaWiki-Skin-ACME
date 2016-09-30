@@ -912,5 +912,8 @@ a.external.free::before {
 }
 #mw-log-page {
 	display: block;
-width: 250px;
+	width: 250px;
+}
+pre {
+	display: inline-block;
 }
