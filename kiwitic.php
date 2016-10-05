@@ -34,6 +34,7 @@ $wgResourceModules['skins.kiwitic'] = array(
 		$skinDir . '/js/Gadget-ReferenceTooltips-ko.js',
 		$skinDir . '/js/wikipedia.js',
 		$skinDir . '/js/R-18_NoAD.js',
+		$skinDir . '/js/throttle.min.js',
 	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
