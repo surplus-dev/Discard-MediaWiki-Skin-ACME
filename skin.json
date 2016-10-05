@@ -40,8 +40,7 @@
 				"js/adsbygoogle.js",
 				"js/Gadget-ReferenceTooltips-ko.js",
 				"js/wikipedia.js",
-				"js/R-18_NoAD.js",
-				"js/throttle.min.js"
+				"js/R-18_NoAD.js"
 			]
 		}
 	},
