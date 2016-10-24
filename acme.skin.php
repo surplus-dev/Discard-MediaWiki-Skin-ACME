@@ -18,12 +18,6 @@ class SkinAcme extends SkinTemplate {
 		$out->addModuleScripts( 'skins.acme' );
 		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
-		$out->addMeta('twitter:card', 'summary');
-		$out->addMeta('twitter:site', '@wsilog');
-		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
-		$out->addMeta('twitter:description', $out->mBodytext );
-		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://wsilog.xyz/wsilog.png');
 //		크롬, 파이어폭스 OS, 오페라
 		$out->addMeta('theme-color', 'orange');
 //		윈도우 폰
@@ -69,7 +63,6 @@ class AcmeTemplate extends BaseTemplate {
 		$this->html('headelement');
 		?>
 		<!--header start-->
-		<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		<header class="head-section">
 		<div class="navbar navbar-default navbar-static-top container">
 			<div class="navbar-header">
@@ -95,12 +88,12 @@ class AcmeTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-<li id="t-bell"><a href="/wiki/특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
-<li id="t-puzzle"><a href="/wiki/특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
-<li id="t-book"><a href="/wiki/위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
-<li id="t-gavel"><a href="/wiki/위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>					
-<li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
-						<li id="t-re"><?php echo '<a href="/wiki/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
+<li id="t-bell"><a href="<?php echo $url_prefix; ?>'특수:필요한문서"><i class="fa fa-bell" aria-hidden="true"></i> 작성 필요</a></li>
+<li id="t-puzzle"><a href="<?php echo $url_prefix; ?>'특수:짧은문서"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> 짧은 문서</a></li>
+<li id="t-book"><a href="<?php echo $url_prefix; ?>'위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
+<li id="t-gavel"><a href="<?php echo $url_prefix; ?>'위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>					
+<li id="t-upload"><a href="<?php echo $url_prefix; ?>'%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
+						<li id="t-re"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 						
 						</ul>
@@ -131,7 +124,7 @@ class AcmeTemplate extends BaseTemplate {
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '<i class="fa fa-cog" aria-hidden="true"></i>  환경 설정', array( 'title' => '환경 설정을 불러옵니다.' ) ); ?></li>
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '<i class="fa fa-bookmark" aria-hidden="true"></i>  주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
-						<li id="pt-logout"><?php echo '<a href="/wiki/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?></li>
+						<li id="pt-logout"><?php echo '<a href="'.$url_prefix.'index.php?title=특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?></li>
 					</ul>
 				</li>
 				
@@ -141,7 +134,7 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo '<a href="/wiki/index.php?title=특수:로그인&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i>
+				<?php echo '<a href="'.$url_prefix.'index.php?title=특수:로그인&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i>
  <span id="mobile">로그인</span></a>'; ?>
 				</li>
 				
@@ -191,9 +184,6 @@ class AcmeTemplate extends BaseTemplate {
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
     }
-if (preg_match("/&action=history/", $_SERVER["REQUEST_URI"])) {
-    echo '<table id="history" class="wikitable" style="width:100%;background: transparent none repeat scroll 0% 0%;padding:5px;width: 100%;border:2px solid;border-color:#00b5ff;"><tbody><tr><td><div  style="padding:5px;background-color: transparent;border:none;"><center><big style="color:#00b5ff;">2016년 9월 5일 이전 기여는 위키올 시절의 기여 입니다.</big></div></td></tr></tbody></table>';
-}
 else {  echo '<br>'; } ?>
 	<?php $this->html( 'bodytext' ); 
 if ( $this->data['dataAfterContent'] ): ?>
@@ -207,14 +197,13 @@ if ( $this->data['dataAfterContent'] ): ?>
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="/wiki/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-random" aria-hidden="true"></i><span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/wiki/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></div>
+	<div class="scroll-buttons"><a class="random-link" href="<?php echo $url_prefix; ?>index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-random" aria-hidden="true"></i><span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo $url_prefix;.'index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></div>
 	<!--small footer start -->
     <footer class="footer-small" id="footer">
         <div class="container">
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" class="pull-right" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 					<a href="https://www.mediawiki.org"><img style="margin-right: 10px; " class="pull-right" src="https://www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="https://shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="https://shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
                   </div>
