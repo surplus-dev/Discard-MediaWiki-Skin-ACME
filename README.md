@@ -8,6 +8,13 @@
 ```php
 require_once "$IP/skins/acme/acme.php";
 ```
+
+이나
+
+```
+wfLoadSkin( "acme" );
+```
+
 를 넣으세요.
 
 만약 기본 스킨으로 하려면
