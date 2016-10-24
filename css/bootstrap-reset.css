@@ -906,3 +906,24 @@ font-family: FontAwesome;
     display: block;
 width: 250px;
 }
+.navbox.collapsible.autocollapse.nowraplinks tbody tr th {
+    border: 1px solid #aaa;
+padding: 5px;
+background-color: #f9f9f9;
+}
+.navbox.collapsible.autocollapse.nowraplinks tbody tr td {
+    border: 1px solid #aaa;
+padding: 5px;
+background-color: #f9f9f9;
+}
+.navbox.collapsible.autocollapse.nowraplinks tbody tr td div br {
+    display: none;
+}
+.navbox.collapsible.autocollapse.nowraplinks {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+background-color: #f9f9f9;
+}
+.comment {
+    word-break: break-all;
+}

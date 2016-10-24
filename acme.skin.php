@@ -100,7 +100,7 @@ class AcmeTemplate extends BaseTemplate {
 <li id="t-book"><a href="/wiki/위키:도움말"><i class="fa fa-book" aria-hidden="true"></i> 도움말</a></li>
 <li id="t-gavel"><a href="/wiki/위키:규정"><i class="fa fa-gavel" aria-hidden="true"></i> 규정</a></li>					
 <li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 올리기 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 올리기</a></li>
-						<li id="t-re"><?php echo '<a href="/w/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
+						<li id="t-re"><?php echo '<a href="/wiki/index.php?title=특수:가리키는문서/'.$_URITITLE.'">';?><i class="fa fa-repeat" aria-hidden="true"></i> 역 링크</a></li>
 						<li id="t-Special"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( '특수문서', null ), '<i class="fa fa-cog" aria-hidden="true"></i> 특수 문서', array( 'title' => '특수 문서' ) ); ?></li>
 						
 						</ul>
@@ -110,8 +110,7 @@ class AcmeTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 링크</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-						<li id="t-kiwi"><a href='https://kiwki.us/'><i class="fa fa-user-plus" aria-hidden="true"></i> 키위위키</a></li>
-<li id="t-bbs"><a href='https://wsilog.xyz/bbs'><i class="fa fa-comment" aria-hidden="true"></i> 위키 게시판</a></li>						
+						<li id="t-kiwi"><a href='https://kiwki.us/'><i class="fa fa-user-plus" aria-hidden="true"></i> 키위위키</a></li>				
 						</ul>
 				</li>
 				
@@ -132,7 +131,7 @@ class AcmeTemplate extends BaseTemplate {
 						<li id="pt-preferences"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'preferences', null ), '<i class="fa fa-cog" aria-hidden="true"></i>  환경 설정', array( 'title' => '환경 설정을 불러옵니다.' ) ); ?></li>
 						<li id="pt-watchlist"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'watchlist', null ), '<i class="fa fa-bookmark" aria-hidden="true"></i>  주시 문서', array( 'title' => '주시문서를 불러옵니다.') ); ?></li>
 						<li id="pt-mycontris"><?php echo Linker::linkKnown( SpecialPage::getTitleFor( 'Contributions', $wgUser->getName() ), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array( 'title' => '내 기여 목록을 불러옵니다.' ) ); ?></li>
-						<li id="pt-logout"><?php echo '<a href="/w/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?></li>
+						<li id="pt-logout"><?php echo '<a href="/wiki/index.php?title=특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?></li>
 					</ul>
 				</li>
 				
@@ -142,7 +141,7 @@ class AcmeTemplate extends BaseTemplate {
 				?>
 				
 				<li id="pt-login">
-				<?php echo '<a href="/w/index.php?title=특수:로그인&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i>
+				<?php echo '<a href="/wiki/index.php?title=특수:로그인&returnto='.$_URITITLE.'"><i class="fa fa-sign-in" aria-hidden="true"></i>
  <span id="mobile">로그인</span></a>'; ?>
 				</li>
 				
@@ -208,7 +207,7 @@ if ( $this->data['dataAfterContent'] ): ?>
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="/w/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-random" aria-hidden="true"></i><span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/w/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></div>
+	<div class="scroll-buttons"><a class="random-link" href="/wiki/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-random" aria-hidden="true"></i><span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/wiki/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i></a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i></a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i></a></div>
 	<!--small footer start -->
     <footer class="footer-small" id="footer">
         <div class="container">
