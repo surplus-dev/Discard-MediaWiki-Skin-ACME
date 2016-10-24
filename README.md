@@ -6,7 +6,7 @@
 미디어위키/skins/ 에 acme란 이름으로 파일을 풀고 로컬 셋에
 
 ```php
-require_once "$IP/skins/acme/acme.php";
+wfLoadSkin( "acme" );
 ```
 를 넣으세요.
 
