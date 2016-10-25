@@ -121,8 +121,6 @@ class AcmeTemplate extends BaseTemplate {
 				</li>
 				
 				<?php } else {
-					$result = mt_rand(1, 10000);
-					$email = $result."?d=identicon&f=y";
 				?>
 				
 				<li id="pt-login">
