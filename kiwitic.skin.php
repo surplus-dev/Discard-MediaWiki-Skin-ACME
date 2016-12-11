@@ -214,9 +214,6 @@ class KiwiticTemplate extends BaseTemplate {
 	<?php if ( $this->data['sitenotice'] && $_COOKIE['alertcheck'] != "yes" ) { ?>
 		<div id="sitenotice"><div style="margin-bottom: 10px;">공지<span style="float:right;"><div id="folding_2" style="display:block;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">펼치기</a>]</div><div id="folding_3" style="display:none;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">접기</a>]</div></a></span><div id="folding_1" style="display:none;"><br><?php $this->html( 'sitenotice' ) ?></div></div></div>
 	<?php } ?>
-	<!--상단 광고 -->
-	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
-	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
 	}
@@ -225,9 +222,6 @@ class KiwiticTemplate extends BaseTemplate {
 	}
 	else {  echo '<br>'; } ?>
 	<?php $this->html( 'bodytext' ); ?>
-	<!--하단 광고 -->
-	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
-	<!--하단 광고 끝 -->
 <?php if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
