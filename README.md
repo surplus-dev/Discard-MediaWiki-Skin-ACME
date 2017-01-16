@@ -3,10 +3,10 @@
 
 # 설치법
 
-미디어위키/skins/ 에 acme란 이름으로 파일을 풀고 로컬 셋에
+위키경로/skins/ 에 acme란 이름으로 파일을 풀고 로컬 셋에
 
 ```php
-require_once "$IP/skins/acme/acme.php";
+wfLoadSkin ( "acme" );
 ```
 
 이나
@@ -26,7 +26,7 @@ $wgDefaultSkin = "acme";
 
 # 다크테마
 다크테마로 만들려면
-
+css/bootstrap-reset.css나 미디어위키:Common.css에
 ```css
 body {
     background: black;
@@ -130,4 +130,4 @@ table.wikitable > tr > th, table.wikitable > * > tr > th {
     background-color: black;
 }
 ```
-를 추가하세요
+를 추가하세요.
