@@ -298,9 +298,9 @@ class AcmeTemplate extends BaseTemplate {
                 $this->text('debug');
             }
             ?>
-		</body>
+        </body>
         <?php
-		echo '</html>';
-	}
+        echo '</html>';
+    }
 }
 ?> 
