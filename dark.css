@@ -1,0 +1,99 @@
+body {
+    background: #322910;
+    color: white;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #322910;
+    background: #322910;
+}
+.head-section .navbar-default {
+    background-color: #322910;
+}
+.head-section .nav li a, .head-section .nav li.active ul.dropdown-menu li a {
+    color: white;
+}
+.head-section {
+    border-bottom: 1px solid #322910;
+}
+legend {
+    color: white;
+}
+#toc {
+    background: #322910;
+    color: white;
+}
+#wpTextbox1 {
+    background: #322910;
+    color: white;
+}
+.mw-warning-with-logexcerpt.mw-content-ltr {
+    color: #322910;
+}
+.dropdown-menu {
+    background-color: #322910;
+}
+pre, .mw-highlight pre {
+    color: white;
+    background-color: #322910;
+}
+#wpSummary {
+    background: #322910;
+}
+table.wikitable {
+    background-color: #322910;
+    color: white;
+}
+table.infobox {
+    background-color: #322910;
+    color: white;
+}
+.toccolours {
+    background-color: #322910;
+}
+.editButtons input {
+    background: #322910;
+    color: white;
+}
+.wikiEditor-preview-contents {
+    background-color: #322910;
+}
+#tagfilter {
+    background: #322910;
+    color: white;
+}
+input {
+    background: #322910;
+    color: white;
+}
+.oo-ui-dropdownWidget-handle {
+    color: black;
+}
+#pagehistory li.selected {
+    background-color: #3C3C3C;
+}
+.mw-warning-with-logexcerpt.mw-content-ltr {
+    color: white;
+}
+#wpUploadDescription {
+    background: #322910;
+    color: white;
+}
+.mw-htmlform-submit {
+    background: #322910;
+}
+blockquote {
+    background: #322910;
+}
+s:hover, strike:hover, del:hover {
+    color: #9E9E9E;
+    background-color: #212020;
+}
+s, strike, del {
+    color: #9E9E9E;
+}
+table.wikitable > tr > th, table.wikitable > * > tr > th {
+    background-color: #322910;
+}
+#reference-drawer {
+    background: #322910;
+}
