@@ -18,7 +18,7 @@ a:hover,
 a:focus {
     text-decoration: underline;
     outline: none;
-	color: #046DBC;
+    color: #046DBC;
 }
 .external.text:hover, .external.text:focus {
     color: #015301;
@@ -151,7 +151,7 @@ ul.dropdown-menu { border: none }
 }
 #searchInput {
     border-color: gray;
-	color: gray;
+    color: gray;
 }
 .search:focus {
     margin-top: 3px;
