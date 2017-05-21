@@ -1,6 +1,8 @@
 <?php
 
-if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki package and cannot be run standalone." );
+if (!defined('MEDIAWIKI')) {
+	die("This is an extension to the MediaWiki package and cannot be run standalone.");
+}
 
 $wgExtensionCredits['skin'][] = array(
     'path'        => __FILE__,
@@ -16,22 +18,22 @@ $wgValidSkinNames['acme'] = 'Acme';
 $wgAutoloadClasses['SkinAcme'] = __DIR__ . '/acme.skin.php';
 
 
-$skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
-$skinDir = array_pop( $skinDirParts );
+$skinDirParts = explode(DIRECTORY_SEPARATOR, __DIR__);
+$skinDir = array_pop($skinDirParts);
 
 $wgResourceModules['skins.acme'] = array(
     'styles' => array(
-        $skinDir . '/css/bootstrap.min.css'            => array( 'media' => 'all' ),
-        $skinDir . '/css/theme.css'            => array( 'media' => 'all' ),
-        $skinDir . '/css/bootstrap-reset.css'            => array( 'media' => 'all' ),
-        $skinDir . '/css/style.css'            => array( 'media' => 'all' ),
-        $skinDir . '/css/style-responsive.css'            => array( 'media' => 'all' ),
-    ),
-    'scripts' => array(
-        $skinDir . '/js/jquery.min.js',
-        $skinDir . '/js/bootstrap.min.js',
-        $skinDir . '/js/Gadget-ReferenceTooltips-ko.js',
-    ),
+        $skinDir.'/css/bootstrap.min.css'	=> array('media' => 'all'),
+        $skinDir.'/css/theme.css' => array('media' => 'all'),
+        $skinDir.'/css/bootstrap-reset.css' => array('media' => 'all'),
+        $skinDir.'/css/style.css' => array('media' => 'all'),
+        $skinDir.'/css/style-responsive.css' => array('media' => 'all'),
+	),
+		'scripts' => array(
+			$skinDir.'/js/jquery.min.js',
+			$skinDir.'/js/bootstrap.min.js',
+			$skinDir.'/js/Gadget-ReferenceTooltips-ko.js',
+	),
     'remoteBasePath' => &$GLOBALS['wgStylePath'],
-    'localBasePath'  => &$GLOBALS['wgStyleDirectory'],
+    'localBasePath' => &$GLOBALS['wgStyleDirectory'],
 );
