@@ -153,7 +153,7 @@
                                             <?php echo Linker::linkKnown(SpecialPage::getTitleFor('Contributions', $wgUser -> getName()), '<i class="fa fa-pencil" aria-hidden="true"></i> 기여 문서', array('title' => '내 기여 목록을 불러옵니다.')); ?>
                                         </li>
                                         <li>
-                                            <?php echo '<a href="'.$url_prefix.'특수:로그아웃&returnto='.$_URITITLE.'"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?>
+                                            <?php echo '<a href="'.$url_prefix.'특수:로그아웃"><i class="fa fa-times" aria-hidden="true"></i>  로그아웃</a>'; ?>
                                         </li>
                                     </ul>
                                 </li>
@@ -161,7 +161,7 @@
                             } else {
 ?>  
                                 <li>
-                                    <a href="<?php echo $url_prefix; ?>특수:로그인&returnto=<?php echo $_URITITLE; ?>">
+                                    <a href="<?php echo $url_prefix; ?>특수:로그인">
                                         <i class="fa fa-sign-in" aria-hidden="true"></i>
                                         <span id="mobile">로그인</span>
                                     </a>
