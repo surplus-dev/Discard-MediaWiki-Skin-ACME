@@ -1,43 +1,35 @@
-{
-    "name": "Acme",
-    "author": "cosmic 원본, 김동동 수정, [https://github.com/2DU/acme/graphs/contributors 기타]",
-    "url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
-    "descriptionmsg": "acme-desc",
-    "namemsg": "skinname-acme",
-    "license-name": "FREE LICENSE",
-    "type": "skin",
-    "ValidSkinNames": {
-        "acme": "Acme"
-    },
-    "AutoloadClasses": {
-        "SkinAcme": "acme.skin.php"
-    },
-    "MessageDirs": {
-        "acme": "i18n"
-    },
-    "ResourceModules": {
-        "skins.acme": {
-            "styles": {
-                "css/bootstrap.min.css": {
-                    "media": "all"
-                },
-                "css/theme.css": {
-                    "media": "all"
-                },
-                "css/bootstrap-reset.css": {
-                    "media": "all"
-                },
-                "css/style.css": {
-                    "media": "all"
-                },
-                "css/style-responsive.css": {
-                    "media": "all"
-                }
-            }
-        }
-    },
-    "ResourceFileModulePaths": {
-        "localBasePath": "",
-        "remoteSkinPath": "acme"
-    }
+{"name":"Acme",
+"author":["Cosmic (original)","2DU","Hoto-Cocoa","PlavorSeol","..."],
+"url":"https://github.com/PlavorSeol/Acme",
+"descriptionmsg":"acme-desc",
+"namemsg":"skinname-acme",
+"license-name":"Free License",
+"type":"skin",
+"version":"1.0",
+
+"ValidSkinNames":
+	{"acme":"Acme"},
+"AutoloadClasses":
+	{"SkinAcme":"Acme.skin.php"},
+"MessageDirs":
+	{"Acme":"i18n"},
+"ResourceModules":
+	{"skins.acme":
+		{"styles":
+			{"css/bootstrap.min.css":
+				{"media":"all"},
+			"css/theme.css":
+				{"media":"all"},
+			"css/bootstrap-reset.css":
+				{"media":"all"},
+			"css/style.css":
+				{"media":"all"},
+			"css/style-responsive.css":
+				{"media":"all"}
+			}
+		}
+	},
+"ResourceFileModulePaths":
+	{"localBasePath":"",
+	"remoteSkinPath":"Acme"}
 }
